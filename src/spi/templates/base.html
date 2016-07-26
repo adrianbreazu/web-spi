@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="sprinkler programming page using Raspberry Pi">
+    <meta name="author" content="Adrian Ioan Breazu">
+    <meta name="contact" content="breazuadrian at gmail dot com">
+    <link rel="icon" href="{% static 'resources/images/favicon.ico' %}">
+
+    <title>Welcome to the Raspbery Pi Sprinkler programming system</title>
+
+    <link href="{% static 'bootstrap-3.3.6-dist/css/bootstrap.min.css' %}" rel="stylesheet"/>
+    {% block style %}
+    {% endblock style %}
+</head>
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation" class="active"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            {% block content %}
+            {% endblock content %}
+        </div>
+
+        {% block footer %}
+        <footer class="footer">
+            <p>&copy; 2016 Bruno Corp.</p>
+        </footer>
+        {% endblock footer %}
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{% static 'bootstrap-3.3.6-dist/js/bootstrap.min.js' %}"></script>
+    {% block script %}
+    {% endblock script %}
+</body>
+</html>

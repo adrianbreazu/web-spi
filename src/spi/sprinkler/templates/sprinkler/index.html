@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if scheduler %}
+    <h1>Sprinkler program</h1>
+    <br/>
+    <div>
+        <h2>Set sprinkler start hour</h2>
+        <p>{{ scheduler.id }}</p>
+        <p>{{ scheduler.name }}</p>
+        <p>{{scheduler.start_time }}</p>
+
+
+        </div>
+        <ol>
+            {% for sprinkler in sprinkler_list %}
+                <li><a href="#">{{ sprinkler.id }} || {{ sprinkler.name }} || {{ sprinkler.duration }} || {{ sprinkler.order }}</li>
+            {% endfor %}
+        </ol>
+    </div>
+{% else %}
+    <p>Nothing configured.</p>
+{% endif %}
+
+{% endblock content %}
