@@ -1,26 +1,40 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block content %}
 
-{% if scheduler %}
     <h1>Sprinkler program</h1>
     <br/>
-    <div>
+    <div class="container">
         <h2>Set sprinkler start hour</h2>
-        <p>{{ scheduler.id }}</p>
-        <p>{{ scheduler.name }}</p>
-        <p>{{scheduler.start_time }}</p>
+        <p>ID: {{ scheduler.id }}</p>
+        <p>Name: {{ scheduler.name }}</p>
+        <p>Start time: {{scheduler.start_time }}</p>
 
 
         </div>
-        <ol>
+        <ol id="list">
             {% for sprinkler in sprinkler_list %}
-                <li><a href="#">{{ sprinkler.id }} || {{ sprinkler.name }} || {{ sprinkler.duration }} || {{ sprinkler.order }}</li>
+                <li id="{{ sprinkler.id }}">id: {{ sprinkler.id }}, name: {{ sprinkler.name }}, duration: {{ sprinkler.duration }}, order {{ sprinkler.order }}</li>
             {% endfor %}
         </ol>
-    </div>
-{% else %}
-    <p>Nothing configured.</p>
-{% endif %}
 
+    </div>
+    <br>
+    <div class="container">
+        <form action="{% url 'sprinkler:submit' %}" method="POST">
+            {% csrf_token %}
+            <input type="text" value="ceva_text"/>
+            <input type="submit" value="SAVE" />
+        </form>
+    </div>
+    <div>
+        {% if status %}
+            <p id="save_message">aa {{ message }}</p>
+        {% endif %}
+    </div>
 {% endblock content %}
+
+{% block script %}
+<script src="{% static 'sprinkler/js/sprinkler_release.js' %}"></script>
+{% endblock script %}
