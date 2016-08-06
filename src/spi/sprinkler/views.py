@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import Http404, HttpResponse, HttpResponseRedirect
 from .models import Scheduler, Sprinkler
 from django.core.urlresolvers import reverse
-import sys
+import sys, json
 
 
 def index(request):
@@ -36,7 +36,13 @@ def act(request, sprinkler_id):
     print("ACT !!!")
     print(sprinkler_id)
     try:
-        pass
+        if request.method == 'POST':
+            print('RAW: %s' % request.body)
+            data = json.loads(request.body.decode('utf-8'))
+            print('Data: %s' % data)
+
+            print('id: %s' % data['sprinkler']['id'])
+            print('status: %s' % data['sprinkler']['status'])
     except:
         print(sys.exc_info()[0])
         return render(request=request, template_name='error.html',context={"message": "something with the sprinkler"})
