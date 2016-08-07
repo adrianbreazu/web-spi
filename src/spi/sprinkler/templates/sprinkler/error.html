@@ -1,5 +1,28 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
-{% block content %}
-    <h1>Error: {{ message }}</h1>
-{% endblock %}
+{% block meta %}
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+{% endblock meta %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'sprinkler/css/404style.css' %}" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Viga' rel='stylesheet' type='text/css'>
+{% endblock style %}
+
+{% block title %}404{% endblock title %}
+
+{% block mainblock %}
+    <div class="main">
+        <h1>404</h1>
+        <h2>ooops, something went wrong</h2>
+        <div class="more_w3ls">
+            <a href="{% url 'sprinkler:index' %}">Go home</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2016 Bruno Corp. | Design by <a href="http://w3layouts.com">w3layouts</a></p>
+        </div>
+    </div>
+{% endblock mainblock %}
+
+{% block footer%}{% endblock footer %}

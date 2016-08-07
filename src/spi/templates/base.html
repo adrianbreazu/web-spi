@@ -11,14 +11,13 @@
     {% block meta %}
     {% endblock meta %}
     <link rel="icon" href="{% static 'resources/images/favicon.ico' %}">
-
-    <title>Welcome to the Raspbery Pi Sprinkler programming system</title>
-
     <link href="{% static 'bootstrap-3.3.6-dist/css/bootstrap.min.css' %}" rel="stylesheet"/>
     {% block style %}
     {% endblock style %}
+    <title>{% block title %}{% endblock title %}</title>
 </head>
 <body>
+    {% block mainblock %}
     <div class="container">
         <div class="header clearfix">
             <nav>
@@ -33,13 +32,14 @@
             {% block content %}
             {% endblock content %}
         </div>
-
-        {% block footer %}
-        <footer class="footer">
-            <p>&copy; 2016 Bruno Corp.</p>
-        </footer>
-        {% endblock footer %}
     </div>
+    {% endblock mainblock %}
+
+    {% block footer %}
+    <footer class="footer">
+        <p>&copy; 2016 Bruno Corp.</p>
+    </footer>
+    {% endblock footer %}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="{% static 'bootstrap-3.3.6-dist/js/bootstrap.min.js' %}"></script>

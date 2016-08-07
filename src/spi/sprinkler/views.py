@@ -6,7 +6,6 @@ import sys, json
 
 
 def index(request):
-    print("aaa")
     try:
         # LOAD DATA FROM DATABASE
         scheduler = Scheduler.objects.get(pk=1)
@@ -17,34 +16,46 @@ def index(request):
         }
     except:
         print(sys.exc_info()[0])
-        raise render(request=request, template_name='error.html',context={"message": "This is the page you are looking for"})
-    return render(request=request, template_name="sprinkler/index.html", context=context)
+        raise render(request=request,
+                     template_name='error.html',
+                     context={"message": "This is the page you are looking for"})
+
+    return render(request=request,
+                  template_name="sprinkler/index.html",
+                  context=context)
 
 
 def submit(request):
-    print("message was submitted")
     try:
         # STORE DATA INTO DATABASE
+        print("message was submitted")
         pass
     except:
-        print(sys.exc_info()[0])
-        return render(request=request, template_name='error.html',context={"message": "something when wrong"})
+        return render(request=request,
+                      template_name='error.html',
+                      context={"message": "something when wrong"})
+
     return HttpResponseRedirect(reverse('sprinkler:index'))
 
 
 def act(request, sprinkler_id):
-    print("ACT !!!")
-    print(sprinkler_id)
     try:
         if request.method == 'POST' and request.is_ajax():
             print('RAW: %s' % request.body)
             data = json.loads(request.body.decode('utf-8'))
-            print('Data: %s' % data)
+            #print('Data: %s' % data)
 
-            print('id: %s' % data['sprinkler']['id'])
-            print('status: %s' % data['sprinkler']['status'])
+            #print('id: %s' % data['sprinkler']['id'])
+            #print('status: %s' % data['sprinkler']['status'])
+        else:
+            return render(request=request,
+                          template_name='error.html',
+                          context={"message": "something with the sprinkler"})
     except:
         print(sys.exc_info()[0])
-        return render(request=request, template_name='error.html',context={"message": "something with the sprinkler"})
-    #return HttpResponseRedirect(reverse('sprinkler:index'))
-    return HttpResponse(json.dumps(data), content_type="application/json")
+        return render(request=request,
+                      template_name='sprinkler/error.html',
+                      context={"message": "something with the sprinkler"})
+
+    return HttpResponse(json.dumps(data),
+                        content_type="application/json")
