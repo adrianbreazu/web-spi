@@ -36,7 +36,7 @@ def act(request, sprinkler_id):
     print("ACT !!!")
     print(sprinkler_id)
     try:
-        if request.method == 'POST':
+        if request.method == 'POST' and request.is_ajax():
             print('RAW: %s' % request.body)
             data = json.loads(request.body.decode('utf-8'))
             print('Data: %s' % data)
@@ -46,4 +46,5 @@ def act(request, sprinkler_id):
     except:
         print(sys.exc_info()[0])
         return render(request=request, template_name='error.html',context={"message": "something with the sprinkler"})
-    return HttpResponseRedirect(reverse('sprinkler:index'))
+    #return HttpResponseRedirect(reverse('sprinkler:index'))
+    return HttpResponse(json.dumps(data), content_type="application/json")

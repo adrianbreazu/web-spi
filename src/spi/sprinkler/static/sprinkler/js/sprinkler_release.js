@@ -46,7 +46,7 @@ $(function(){
         });
 
         request.done(function(response) {
-            window.alert('done: '+ response);
+            window.alert('done: status: '+ response.sprinkler.status + ' and id: ' + response.sprinkler.id);
         });
 
         request.fail(function(error) {
