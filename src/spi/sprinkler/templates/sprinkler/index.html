@@ -59,25 +59,25 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#sprinkler_main_div"><i class="fa fa-expand" aria-hidden="true"></i></a>
+                                <a data-toggle="collapse" href="#sprinkler_main_div_{{ sprinkler.id }}"><i class="fa fa-expand" aria-hidden="true"></i></a>
                             </h4>
                         </div>
                     </div>
-                    <div class="panel-collapse collapse orm-group well" id="sprinkler_main_div">
-                        <label for="sprinkler_id">Id:</label>
-                        <input type="text" class="form-control" id="sprinkler_id" name="sprinkler_id" value="{{ sprinkler.id }}">
+                    <div class="panel-collapse collapse orm-group well" id="sprinkler_main_div_{{ sprinkler.id }}">
+                        <label for="sprinkler_{{ sprinkler.id }}_id">Id:</label>
+                        <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_id" name="sprinkler_id" value="{{ sprinkler.id }}">
 
-                        <label for="sprinkler_name">Name:</label>
-                        <input type="text" class="form-control" id="sprinkler_name" name="sprinkler_name" value="{{ sprinkler.name }}">
+                        <label for="sprinkler_{{ sprinkler.id }}_name">Name:</label>
+                        <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_name" name="sprinkler_name" value="{{ sprinkler.name }}">
 
-                        <label for="sprinkler_name">Duration:</label>
-                        <input type="text" class="form-control" id="sprinkler_duration" name="sprinkler_duration" value="{{ sprinkler.duration }}">
+                        <label for="sprinkler_{{ sprinkler.id }}_duration">Duration:</label>
+                        <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_duration" name="sprinkler_duration" value="{{ sprinkler.duration }}">
                         <br/>
-                        <label for="sprinkler_name">Manual start/stop</label>
-                        <input type="checkbox" id="sprinkler_button_{{ sprinkler_id }}" data-toggle="toggle" data-on="Start" data-off="Stop">
+                        <label for="sprinkler_{{ sprinkler.id }}_name">Manual start/stop</label>
+                        <input type="checkbox" id="sprinkler_{{ sprinkler.id }}_button" data-toggle="toggle" data-on="Start" data-off="Stop">
                         <br/>
-                        <label for="sprinkler_note">Note:</label>
-                        <textarea class="form-control" id="sprinkler_note" rows="3">{{ sprinkler.note }}</textarea>
+                        <label for="sprinkler_{{ sprinkler.id }}_note">Note:</label>
+                        <textarea class="form-control" id="sprinkler_{{ sprinkler.id }}_note" rows="3">{{ sprinkler.note }}</textarea>
                     </div>
                 </div>
                 {% endfor %}

@@ -4,7 +4,6 @@ from .models import Scheduler, Sprinkler
 from django.core.urlresolvers import reverse
 import sys, json
 
-
 def index(request):
     try:
         # LOAD DATA FROM DATABASE

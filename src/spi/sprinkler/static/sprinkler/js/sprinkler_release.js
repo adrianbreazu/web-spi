@@ -27,15 +27,11 @@ $(function(){
         }
     });
 
-    var STATUS = "off";
-
-    $('#list li').click(function () {
-        console.log($(this).attr('id'));
-        console.log($(this).text());
+    $('input:checkbox').change(function () {
         var dataObject = new Object();
         var sprinklerObject = new Object();
         sprinklerObject.id = $(this).attr('id');
-        sprinklerObject.status =  STATUS;
+        sprinklerObject.status = $(this).prop('checked');
         dataObject.sprinkler = sprinklerObject;
 
         request = $.ajax({
@@ -46,7 +42,8 @@ $(function(){
         });
 
         request.done(function(response) {
-            window.alert('done: status: '+ response.sprinkler.status + ' and id: ' + response.sprinkler.id);
+            //window.alert('done: status: '+ response.sprinkler.status + ' and id: ' + response.sprinkler.id);
+            console.log('done: status: '+ response.sprinkler.status + ' and id: ' + response.sprinkler.id);
         });
 
         request.fail(function(error) {
