@@ -4,6 +4,7 @@ from .models import Scheduler, Sprinkler
 from django.core.urlresolvers import reverse
 import sys, json
 
+
 def index(request):
     try:
         # LOAD DATA FROM DATABASE
@@ -17,7 +18,8 @@ def index(request):
         print(sys.exc_info()[0])
         raise render(request=request,
                      template_name='error.html',
-                     context={"message": "This is the page you are looking for"})
+                     context={"message": "This is the page you are looking for"},
+                     content_type="application/json")
 
     return render(request=request,
                   template_name="sprinkler/index.html",
@@ -27,6 +29,10 @@ def index(request):
 def submit(request):
     try:
         # STORE DATA INTO DATABASE
+        print('RAW: %r' % request.body)
+        message = request.body.decode('utf-8')
+        print('RAW: %r' % request.POST.get("sprinkler_id"))
+        print(message)
         print("message was submitted")
         pass
     except:
@@ -43,7 +49,6 @@ def act(request, sprinkler_id):
             print('RAW: %s' % request.body)
             data = json.loads(request.body.decode('utf-8'))
             #print('Data: %s' % data)
-
             #print('id: %s' % data['sprinkler']['id'])
             #print('status: %s' % data['sprinkler']['status'])
         else:

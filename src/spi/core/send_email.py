@@ -4,10 +4,12 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 
+
 SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 FROM_EMAIL = "email@gmail.com"
 FROM_PASSWORD = "password"
+
 
 def send_email_with_subject (recipient, subject, body):
     msg = MIMEMultipart()

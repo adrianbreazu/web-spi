@@ -1,3 +1,4 @@
+// AJAX logic for manual release of sprinkler
 $(function(){
     function getCookie(name) {
         var cookieValue = null;
@@ -19,6 +20,7 @@ $(function(){
         // these HTTP methods do not require CSRF protection
         return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
     }
+
     $.ajaxSetup({
         beforeSend: function(xhr, settings) {
             if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
@@ -27,15 +29,15 @@ $(function(){
         }
     });
 
-    $('input:checkbox').change(function () {
+    $('[id$="_button"]').change(function () {
         var dataObject = new Object();
         var sprinklerObject = new Object();
-        sprinklerObject.id = $(this).attr('id');
+        sprinklerObject.id = $(this).attr('sprinkler_id');
         sprinklerObject.status = $(this).prop('checked');
         dataObject.sprinkler = sprinklerObject;
 
         request = $.ajax({
-            url: $(this).attr('id'),
+            url: $(this).attr('sprinkler_id'),
             method: "POST",
             data: JSON.stringify(dataObject),
             datatype: "json"
@@ -47,7 +49,41 @@ $(function(){
         });
 
         request.fail(function(error) {
-            window.alert('failed: '+ error);
+            window.alert('failed: '+ JSON.stringify(error));
         });
     });
+
+    $('#submit').click(function () {
+        console.log("submit pressed");
+
+        var submit_dataObject = new Object();
+        var submit_sprinklerObject = new Object();
+        var sprinklers = [];
+
+        submit_dataObject.name =  $("#scheduler_name").val();
+        submit_dataObject.days = $("#scheduler_days").val();
+        submit_dataObject.start_time = $("#scheduler_start_time").val();
+        submit_dataObject.skip = $("#scheduler_skip").val();
+        $("#panel_group").children("[id^='sprinkler_main_div_']").each(function() {
+            submit_sprinklerObject.id = $(this).children("[id$='_id']").val();
+            submit_sprinklerObject.name = $(this).children("[id$='_name']").val();
+            submit_sprinklerObject.duration = $(this).children("[id$='_duration']").val();
+            submit_sprinklerObject.notes = $(this).children("[id$='_notes']").val();
+            sprinklers.push(submit_sprinklerObject);
+            submit_sprinklerObject = {};
+        });
+        submit_dataObject.sprinkler = sprinklers;
+
+        //request = $.post("#", JSON.stringify(submit_dataObject), "json");
+        request = $.post("submit", JSON.stringify(submit_dataObject), "json");
+
+        request.fail(function(error) {
+            window.alert('failed on submit: ' + JSON.stringify(error));
+        });
+    });
+});
+
+// form post request
+$(function () {
+
 });
