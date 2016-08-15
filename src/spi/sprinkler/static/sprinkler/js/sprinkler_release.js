@@ -45,7 +45,7 @@ $(function(){
 
         request.done(function(response) {
             //window.alert('done: status: '+ response.sprinkler.status + ' and id: ' + response.sprinkler.id);
-            console.log('done: status: '+ response.sprinkler.status + ' and id: ' + response.sprinkler.id);
+            console.log('done: ' + JSON.stringify(response));
         });
 
         request.fail(function(error) {
@@ -61,9 +61,9 @@ $(function(){
         var sprinklers = [];
 
         submit_dataObject.name =  $("#scheduler_name").val();
-        submit_dataObject.days = $("#scheduler_days").val();
         submit_dataObject.start_time = $("#scheduler_start_time").val();
         submit_dataObject.skip = $("#scheduler_skip").val();
+        submit_dataObject.days = $("#scheduler_days").val();
         $("#panel_group").children("[id^='sprinkler_main_div_']").each(function() {
             submit_sprinklerObject.id = $(this).children("[id$='_id']").val();
             submit_sprinklerObject.name = $(this).children("[id$='_name']").val();
@@ -78,7 +78,8 @@ $(function(){
         request = $.post("submit", JSON.stringify(submit_dataObject), "json");
 
         request.fail(function(error) {
-            window.alert('failed on submit: ' + JSON.stringify(error));
+            //window.alert('failed on submit: ' + JSON.stringify(error));
+            console.log('failed on submit: ' + JSON.stringify(error));
         });
     });
 });

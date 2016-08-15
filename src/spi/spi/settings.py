@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'sprinkler',
+    'django_crontab',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -124,4 +125,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [(os.path.join(BASE_DIR, 'static'))]
 
-APPEND_SLASH=False
+APPEND_SLASH = False
+
+CRONJOBS = [
+    ('*/30 * * * *', 'sprinkler.cron.sprinkler_job')
+]
