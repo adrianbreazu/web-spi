@@ -1,3 +1,5 @@
+console.log(time)
+
 // AJAX logic for manual release of sprinkler
 $(function(){
     function getCookie(name) {

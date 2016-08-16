@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 
-{% block title %}Sprinkler release{% endblock title %}
+{% block title %}Sprinkler release home page{% endblock title %}
 
 {% block style %}
 <link href="{% static 'bootstrap-toggle/css/bootstrap-toggle.min.css' %}" rel="stylesheet"/>
@@ -16,7 +16,7 @@
         <div class="row">
             <form action="#" method="post">
                 <div class="form-group well">
-                    <input hidden="hidden" name="scheduler_days" id="scheduler_days" value="{{ scheduler.days }}"/>
+                    <input hidden="hidden" name="scheduler_days" id="scheduler_days" value="{{ scheduler.days }}" placeholder="Scheduled days"/>
                     <label for="schedule_table">Scheduled days:</label>
                     <table class="table table-bordered" id="schedule_table">
                         <thead>
@@ -46,13 +46,13 @@
                     </table>
 
                     <label for="scheduler_name">Scheduler name:</label>
-                    <input type="text" class="form-control" id="scheduler_name" name="scheduler_name" value="{{ scheduler.name }}">
+                    <input type="text" class="form-control" id="scheduler_name" name="scheduler_name" value="{{ scheduler.name }}" placeholder="Scheduler name" />
 
                     <label for="scheduler_start_time">Scheduled start time:</label>
-                    <input type="time" class="form-control" id="scheduler_start_time" name="scheduler_start_time">
+                    <input type="time" class="form-control" id="scheduler_start_time" name="scheduler_start_time" placeholder="Scheduled start time" />
 
-                    <label for="scheduler_skip">Skipe days:</label>
-                    <input type="number" class="form-control" id="scheduler_skip" name="scheduler_kip" value="{{ scheduler.skip_days }}">
+                    <label for="scheduler_skip">Skip days:</label>
+                    <input type="number" class="form-control" id="scheduler_skip" name="scheduler_kip" value="{{ scheduler.skip_days }}" placeholder="Skip days" />
                 </div>
 
                 <div class="panel-group" id="panel_group">
@@ -66,19 +66,19 @@
                     </div>
                     <div class="panel-collapse collapse orm-group well" id="sprinkler_main_div_{{ sprinkler.id }}">
                         <label for="sprinkler_{{ sprinkler.id }}_id">Id:</label>
-                        <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_id" name="sprinkler_id" value="{{ sprinkler.id }}">
+                        <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_id" name="sprinkler_id" value="{{ sprinkler.id }}" placeholder="ID" />
 
                         <label for="sprinkler_{{ sprinkler.id }}_name">Name:</label>
-                        <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_name" name="sprinkler_name" value="{{ sprinkler.name }}">
+                        <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_name" name="sprinkler_name" value="{{ sprinkler.name }}" placeholder="Name" />
 
                         <label for="sprinkler_{{ sprinkler.id }}_duration">Duration:</label>
-                        <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_duration" name="sprinkler_duration" value="{{ sprinkler.duration }}">
+                        <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_duration" name="sprinkler_duration" value="{{ sprinkler.duration }}" placeholder="Duration" />
                         <br/>
                         <label for="sprinkler_{{ sprinkler.id }}_button">Manual start/stop</label>
-                        <input type="checkbox" sprinkler_id="{{ sprinkler.id }}" id="sprinkler_{{ sprinkler.id }}_button" data-toggle="toggle" data-on="Start" data-off="Stop">
+                        <input type="checkbox" sprinkler_id="{{ sprinkler.id }}" id="sprinkler_{{ sprinkler.id }}_button" data-toggle="toggle" data-on="Start" data-off="Stop" />
                         <br/>
                         <label for="sprinkler_{{ sprinkler.id }}_notes">Notes:</label>
-                        <textarea class="form-control" id="sprinkler_{{ sprinkler.id }}_notes" rows="3" name="sprinkler_notes">{{ sprinkler.notes }}</textarea>
+                        <textarea class="form-control" id="sprinkler_{{ sprinkler.id }}_notes" rows="3" name="sprinkler_notes" placeholder="Notes">{{ sprinkler.notes }}</textarea>
                     </div>
                 {% endfor %}
                 </div>
@@ -92,133 +92,11 @@
 {% block script %}
 <script src="{% static 'sprinkler/js/time.js' %}"></script>
 <script>
-// set scheduler start time value
+// format start time data
 time = Time("{{ scheduler.start_time }}");
 $("#scheduler_start_time").val(time.format("hh:mm"));
-
-// logic for populating days of the week
-var days_of_the_week = $('#scheduler_days').val();
-if (days_of_the_week[0] === "M")
-    $('#checkbox_Monday').prop('checked', true);
-else
-    $('#checkbox_Monday').prop('checked', false);
-
-if (days_of_the_week[1] === "T")
-    $('#checkbox_Tuesday').prop('checked', true);
-else
-    $('#checkbox_Tuesday').prop('checked', false);
-
-if (days_of_the_week[2] === "W")
-    $('#checkbox_Wednesday').prop('checked', true);
-else
-    $('#checkbox_Wednesday').prop('checked', false);
-
-if (days_of_the_week[3] === "T")
-    $('#checkbox_Thursday').prop('checked', true);
-else
-    $('#checkbox_Thursday').prop('checked', false);
-
-if (days_of_the_week[4] === "F")
-    $('#checkbox_Friday').prop('checked', true);
-else
-    $('#checkbox_Friday').prop('checked', false);
-
-if (days_of_the_week[5] === "S")
-    $('#checkbox_Saturday').prop('checked', true);
-else
-    $('#checkbox_Saturday').prop('checked', false);
-
-if (days_of_the_week[6] === "S")
-    $('#checkbox_Sunday').prop('checked', true);
-else
-    $('#checkbox_Sunday').prop('checked', false);
-
-if ($('#checkbox_Monday').prop('checked') && $('#checkbox_Tuesday').prop('checked') && $('#checkbox_Wednesday').prop('checked') && $('#checkbox_Thursday').prop('checked') && $('#checkbox_Friday').prop('checked') && $('#checkbox_Saturday').prop('checked') && $('#checkbox_Sunday').prop('checked'))
-    $('#checkbox_all').prop('checked', true);
-else
-    $('#checkbox_all').prop('checked', false);
-
-// logic for all days of the week
-$('#checkbox_all').change(function () {
-    if ($('#checkbox_all').prop('checked')) {
-        $('#checkbox_Monday').prop('checked', true);
-        $('#checkbox_Tuesday').prop('checked', true);
-        $('#checkbox_Wednesday').prop('checked', true);
-        $('#checkbox_Thursday').prop('checked', true);
-        $('#checkbox_Friday').prop('checked', true);
-        $('#checkbox_Saturday').prop('checked', true);
-        $('#checkbox_Sunday').prop('checked', true);
-        $('#scheduler_days').val('MTWTFSS');
-        console.log("111" + days_of_the_week);
-    } else {
-        $('#checkbox_Monday').prop('checked', false);
-        $('#checkbox_Tuesday').prop('checked', false);
-        $('#checkbox_Wednesday').prop('checked', false);
-        $('#checkbox_Thursday').prop('checked', false);
-        $('#checkbox_Friday').prop('checked', false);
-        $('#checkbox_Saturday').prop('checked', false);
-        $('#checkbox_Sunday').prop('checked', false);
-        $('#scheduler_days').val('-------');
-        console.log("2222" + days_of_the_week);
-    }
-
-
-$('[id$="day"]').change(function () {
-    console.log("begin" + days_of_the_week);
-    if ($('#checkbox_Monday').prop('checked') && $('#checkbox_Tuesday').prop('checked') && $('#checkbox_Wednesday').prop('checked') && $('#checkbox_Thursday').prop('checked') && $('#checkbox_Friday').prop('checked') && $('#checkbox_Saturday').prop('checked') && $('#checkbox_Sunday').prop('checked'))
-        $('#checkbox_all').prop('checked', true);
-    else
-        $('#checkbox_all').prop('checked', false);
-
-    switch ($(this).attr('id')) {
-        case "checkbox_Monday":
-            if ($('#checkbox_Monday').prop('checked')) {
-                days_of_the_week = 'M' + days_of_the_week.substr(1);
-            } else {
-                days_of_the_week = '-' + days_of_the_week.substr(1);
-            }
-        case "checkbox_Tuesday":
-           if ($('#checkbox_Tuesday').prop('checked')) {
-                days_of_the_week = days_of_the_week.substr(0,1) + 'T' + days_of_the_week.substr(2);
-            } else {
-                days_of_the_week =  days_of_the_week.substr(0,1) + '-' + days_of_the_week.substr(2);
-            }
-        case "checkbox_Wednesday":
-           if ($('#checkbox_Wednesday').prop('checked')) {
-                days_of_the_week =  days_of_the_week.substr(0,2) + 'W' + days_of_the_week.substr(3);
-            } else {
-                days_of_the_week =  days_of_the_week.substr(0,2) + '-' + days_of_the_week.substr(3);
-            }
-        case "checkbox_Thursday":
-           if ($('#checkbox_Thursday').prop('checked')) {
-                days_of_the_week =  days_of_the_week.substr(0,3) + 'T' + days_of_the_week.substr(4);
-            } else {
-                days_of_the_week =  days_of_the_week.substr(0,3) + '-' + days_of_the_week.substr(4);
-            }
-        case "checkbox_Friday":
-           if ($('#checkbox_Friday').prop('checked')) {
-                days_of_the_week =  days_of_the_week.substr(0,4) + 'F' + days_of_the_week.substr(5);
-            } else {
-                days_of_the_week =  days_of_the_week.substr(0,4) + '-' + days_of_the_week.substr(5);
-            }
-        case "checkbox_Saturday":
-           if ($('#checkbox_Saturday').prop('checked')) {
-                days_of_the_week =  days_of_the_week.substr(0,5) + 'S' + days_of_the_week.substr(6);
-            } else {
-                days_of_the_week =  days_of_the_week.substr(0,5) + '-' + days_of_the_week.substr(6);
-            }
-        case "checkbox_Sunday":
-           if ($('#checkbox_Sunday').prop('checked')) {
-                days_of_the_week =  days_of_the_week.substr(0,6) + 'S';
-            } else {
-                days_of_the_week =  days_of_the_week.substr(0,6) + '-';
-            }
-    }
-    $('#scheduler_days').val(days_of_the_week);
-    console.log("end" + days_of_the_week);
-});
-});
 </script>
+<script src="{% static 'sprinkler/js/days.js' %}"></script>
 <script src="{% static 'sprinkler/js/sprinkler_release.js' %}"></script>
 <script src="{% static 'bootstrap-toggle/js/bootstrap-toggle.min.js' %}"></script>
 {% endblock script %}

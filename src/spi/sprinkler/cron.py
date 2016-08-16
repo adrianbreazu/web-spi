@@ -19,4 +19,4 @@ def sprinkler_job():
                                            body="Sprinklers 1,2,3 and 4 finished their job successfully")
     except Exception as e:
         send_email.send_email_with_subject(recipient='breazuadrian@gmail.com', subject='Sprinklers job failed',
-                                           body="Sprinklers 1,2,3 and 4 did not start")
+                                           body="Sprinklers 1,2,3 and 4 did not start. " + e)

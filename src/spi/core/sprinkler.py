@@ -1,11 +1,11 @@
-import RPi.GPIO as GPIO
-#import core.GPIO as GPIO
+#import RPi.GPIO as GPIO
+import core.GPIO as GPIO
 
 
 class Sprinkler:
     GPIO_TYPE = {
-        "output": GPIO.output,
-        "input": GPIO.input
+        "output": GPIO.OUT,
+        "input": GPIO.IN
     }
 
     GPIO_STATE = {
@@ -23,8 +23,11 @@ class Sprinkler:
 
     def init_GPIO(self, pinout, gpio_type):
         try:
-            #GPIO.setup(pinout, gpio_type)
-            #self.pinout_list.append(pinout)
+            if not(pinout in self.pinout_list):
+                GPIO.setup(pinout, gpio_type)
+                self.pinout_list.append(pinout)
+            else:
+                print("pin already setup")
             print("setup GPIO %s for type %s" % pinout % gpio_type)
         except Exception as e:
             print("init_GPIO exception %s" % e)

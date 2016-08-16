@@ -128,5 +128,5 @@ STATICFILES_DIRS = [(os.path.join(BASE_DIR, 'static'))]
 APPEND_SLASH = False
 
 CRONJOBS = [
-    ('*/30 * * * *', 'sprinkler.cron.sprinkler_job')
+    ('00 02 * * *', 'sprinkler.cron.sprinkler_job')
 ]
