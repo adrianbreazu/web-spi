@@ -1,5 +1,8 @@
 #import RPi.GPIO as GPIO
 import core.GPIO as GPIO
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class Sprinkler:
@@ -14,41 +17,54 @@ class Sprinkler:
     }
 
     def __init__(self):
+        logger.debug("beginning of __init__")
         try:
             GPIO.setmode(GPIO.BOARD)
             self.pinout_list = []
-            print("init")
         except Exception as e:
-            print("__init__ exception %s" % e)
+            logger.error("__init__ exception {0}".format(e))
+        finally:
+            logger.debug("end of __init__")
 
     def init_GPIO(self, pinout, gpio_type):
+        logger.debug("beginning of init_GPIO, for pin: {0} and gpio_type: {1}".format(pinout, gpio_type))
         try:
             if not(pinout in self.pinout_list):
                 GPIO.setup(pinout, gpio_type)
                 self.pinout_list.append(pinout)
+                logger.debug("set pin {0}".format(int(pinout)))
             else:
-                print("pin already setup")
-            print("setup GPIO %s for type %s" % pinout % gpio_type)
+                logger.debug("pin: {0} already exists".format(int(pinout)))
         except Exception as e:
-            print("init_GPIO exception %s" % e)
+            logger.error("init_GPIO exception {0}".format(e))
+        finally:
+            logger.debug("end of init_GPIO, for pin: {0} and gpio_type: {1}".format(pinout, gpio_type))
 
     def activate(self, pinout):
-        self.change_state(pinout, self.GPIO_STATE.get("low"))
+        self.change_state(int(pinout), self.GPIO_STATE.get("low"))
 
     def deactivate(self, pinout):
-        self.change_state(pinout, self.GPIO_STATE.get("high"))
+        self.change_state(int(pinout), self.GPIO_STATE.get("high"))
 
     def change_state(self, pinout, gpio_state):
+        logger.debug("beginning of change_state for pin {0} state to {1}".format(pinout, gpio_state))
         try:
-            GPIO.output(pinout, gpio_state)
+            GPIO.output(int(pinout), gpio_state)
         except Exception as e:
-            print("change state exception %s" % e)
+            logger.error("change state exception {0}".format(e))
+        finally:
+            logger.debug("end of change_state for pin {0} state to {1}".format(pinout, gpio_state))
+
+    def cleanup(self):
+        print("beginning cleanup")
+        print("pinout_list array = {0}".format(self.pinout_list))
+        if len(self.pinout_list):
+            for pin in self.pinout_list:
+                print("deactivate pin: {0}".format(pin))
+                self.deactivate(pin)
+        GPIO.cleanup()
+        print("finish RPI cleanup")
+        print("end of cleanup")
 
     def __del__(self):
-        try:
-            for pin in self.pinout_list:
-                self.deactivate(pin)
-            GPIO.cleanup()
-            print("finish clean")
-        except Exception as e:
-            print("__del__ exception %s" % e)
+        self.cleanup()

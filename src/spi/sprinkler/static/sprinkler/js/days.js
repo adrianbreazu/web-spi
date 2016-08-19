@@ -51,7 +51,7 @@ $('#checkbox_all').change(function () {
         $('#checkbox_Saturday').prop('checked', true);
         $('#checkbox_Sunday').prop('checked', true);
         $('#scheduler_days').val('MTWTFSS');
-        console.log("111" + days_of_the_week);
+        console.log("enable checkbox_all" + days_of_the_week);
     } else {
         $('#checkbox_Monday').prop('checked', false);
         $('#checkbox_Tuesday').prop('checked', false);
@@ -61,7 +61,7 @@ $('#checkbox_all').change(function () {
         $('#checkbox_Saturday').prop('checked', false);
         $('#checkbox_Sunday').prop('checked', false);
         $('#scheduler_days').val('-------');
-        console.log("2222" + days_of_the_week);
+        console.log("disable checkbox_all" + days_of_the_week);
     }
 
 

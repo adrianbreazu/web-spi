@@ -130,3 +130,51 @@ APPEND_SLASH = False
 CRONJOBS = [
     ('00 02 * * *', 'sprinkler.cron.sprinkler_job')
 ]
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s'
+        },
+        'simple': {
+            'format': '%(levelname)s %(asctime)s %(module)s %(message)s'
+        },
+    },
+    'handlers': {
+        'sprinkler_logfile': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'log/sprinkler.log'),
+            'maxBytes': 1024*1024*50,
+            'backupCount': 2,
+            'formatter': 'verbose'
+        },
+        'core_logfile': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'log/core.log'),
+            'maxBytes': 1024*1024*50,
+            'backupCount': 2,
+            'formatter': 'verbose'
+        },
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+    },
+    'loggers': {
+        'sprinkler': {
+            'handlers': ['console', 'sprinkler_logfile'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'core': {
+            'handlers': ['console', 'core_logfile'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+}
