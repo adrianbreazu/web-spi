@@ -3,7 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from .models import Scheduler, Sprinkler
 from django.core.urlresolvers import reverse
 import sys, json, logging, datetime
-from core import sprinkler as sprinkler
+from core import sprinkler as sprinkler, temperature as temperature_core
 
 my_sprinkler = sprinkler.Sprinkler()
 logger = logging.getLogger(__name__)
@@ -112,3 +112,33 @@ def error(request):
     return render(request=request,
                   template_name='sprinkler/error.html',
                   context={"message": "something went wrong"})
+
+def temp(request):
+    logger.debug('beginning views.temp with request: {0}'.format(request.body.decode('utf-8')))
+
+    try:
+        if request.method == 'POST' and request.is_ajax():
+            logger.info('RAW POST request : {0}'.format(request.body))
+            data = json.loads(request.body.decode('utf-8'))
+            session_id = int(data['sessionid'])
+            logger.debug('session id: {0}'.format(session_id))
+
+            readings = temperature_core.get_readings()
+            data["temperature"] = readings.get('temperature')
+            data["humidity"] = readings.get('humidity')
+            logger.debug('views.temp created data JSON with content: {0}'.format(json.dumps(data)))
+        else:
+            logger.warning('a non POST request was made with request {0}'.format(request.body.decode('utf-8')))
+            return render(request=request,
+                          template_name='sprinkler/error.html',
+                          context={"message": "temp request should be a POST request"})
+
+        return HttpResponse(json.dumps(data),
+                            content_type="application/json")
+    except Exception as e:
+        message = "Something went wrong: " + e
+        return render(request=request,
+                      template_name='sprinkler/error.html',
+                      context={"message": message})
+    finally:
+        logger.debug('end views.temp with request: {0}'.format(request.body.decode('utf-8')))

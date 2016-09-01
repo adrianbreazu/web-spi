@@ -10,6 +10,15 @@
 {% block content %}
     <div class="container-fluid">
         <div class="row">
+            <h1 class="text-center">Outside Temperature and humidity</h1>
+            <div class="panel panel-default">
+                <input id="temperature" placeholder="Temperature" disabled="disabled" />
+                <input id="humidity" placeholder="Humidity" disabled="disabled"/>
+                <input id="get-temperature-and-humidity" type="button" class="button" value="Get read"/>
+            </div>
+        </div>
+
+        <div class="row">
             <h1 class="text-center">Sprinkler release system</h1>
         </div>
 
@@ -98,5 +107,6 @@ $("#scheduler_start_time").val(time.format("hh:mm"));
 </script>
 <script src="{% static 'sprinkler/js/days.js' %}"></script>
 <script src="{% static 'sprinkler/js/sprinkler_release.js' %}"></script>
+<script src="{% static 'sprinkler/js/temperature.js' %}"></script>
 <script src="{% static 'bootstrap-toggle/js/bootstrap-toggle.min.js' %}"></script>
 {% endblock script %}

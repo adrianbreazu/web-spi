@@ -1,177 +1,252 @@
-DEBUG 2016-08-20 00:40:36,474 views 68308 139941778552576 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
-INFO 2016-08-20 00:40:36,499 views 68308 139941778552576 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
-DEBUG 2016-08-20 00:40:36,599 views 68308 139941778552576 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
-DEBUG 2016-08-20 00:40:40,544 views 68308 139941770159872 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-INFO 2016-08-20 00:40:40,544 views 68308 139941770159872 RAW POST request : b'{"sprinkler":{"id":"1","status":true}}'
-DEBUG 2016-08-20 00:40:40,550 views 68308 139941770159872 sprinkler port: 12
-DEBUG 2016-08-20 00:40:40,551 views 68308 139941770159872 activate sprinkler : 1
-DEBUG 2016-08-20 00:40:40,552 views 68308 139941770159872 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-DEBUG 2016-08-20 00:40:42,988 views 68308 139941770159872 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-INFO 2016-08-20 00:40:42,988 views 68308 139941770159872 RAW POST request : b'{"sprinkler":{"id":"1","status":false}}'
-DEBUG 2016-08-20 00:40:42,990 views 68308 139941770159872 sprinkler port: 12
-DEBUG 2016-08-20 00:40:42,991 views 68308 139941770159872 deactivate sprinkler : 1
-DEBUG 2016-08-20 00:40:42,991 views 68308 139941770159872 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-DEBUG 2016-08-20 00:41:46,745 views 68339 140159330977536 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-INFO 2016-08-20 00:41:46,746 views 68339 140159330977536 RAW POST request : b'{"sprinkler":{"id":"1","status":true}}'
-DEBUG 2016-08-20 00:41:46,761 views 68339 140159330977536 sprinkler port: 12
-DEBUG 2016-08-20 00:41:46,762 views 68339 140159330977536 activate sprinkler : 1
-DEBUG 2016-08-20 00:41:46,763 views 68339 140159330977536 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-DEBUG 2016-08-20 00:41:47,841 views 68339 140159330977536 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-INFO 2016-08-20 00:41:47,841 views 68339 140159330977536 RAW POST request : b'{"sprinkler":{"id":"1","status":false}}'
-DEBUG 2016-08-20 00:41:47,844 views 68339 140159330977536 sprinkler port: 12
-DEBUG 2016-08-20 00:41:47,844 views 68339 140159330977536 deactivate sprinkler : 1
-DEBUG 2016-08-20 00:41:47,845 views 68339 140159330977536 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-DEBUG 2016-08-20 00:44:25,699 views 68394 139882544363264 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
-INFO 2016-08-20 00:44:25,721 views 68394 139882544363264 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
-DEBUG 2016-08-20 00:44:25,783 views 68394 139882544363264 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
-DEBUG 2016-08-20 00:44:31,503 views 68394 139882544363264 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-INFO 2016-08-20 00:44:31,503 views 68394 139882544363264 RAW POST request : b'{"sprinkler":{"id":"1","status":true}}'
-DEBUG 2016-08-20 00:44:31,507 views 68394 139882544363264 sprinkler port: 12
-DEBUG 2016-08-20 00:44:31,508 views 68394 139882544363264 activate sprinkler : 1
-DEBUG 2016-08-20 00:44:31,509 views 68394 139882544363264 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-DEBUG 2016-08-20 00:44:33,067 views 68394 139882544363264 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-INFO 2016-08-20 00:44:33,067 views 68394 139882544363264 RAW POST request : b'{"sprinkler":{"id":"1","status":false}}'
-DEBUG 2016-08-20 00:44:33,070 views 68394 139882544363264 sprinkler port: 12
-DEBUG 2016-08-20 00:44:33,071 views 68394 139882544363264 deactivate sprinkler : 1
-DEBUG 2016-08-20 00:44:33,073 views 68394 139882544363264 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-DEBUG 2016-08-20 00:44:44,263 views 68417 140514608064256 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-INFO 2016-08-20 00:44:44,265 views 68417 140514608064256 RAW POST request : b'{"sprinkler":{"id":"1","status":true}}'
-DEBUG 2016-08-20 00:44:44,271 views 68417 140514608064256 sprinkler port: 12
-DEBUG 2016-08-20 00:44:44,272 views 68417 140514608064256 activate sprinkler : 1
-DEBUG 2016-08-20 00:44:44,273 views 68417 140514608064256 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-DEBUG 2016-08-20 00:44:46,239 views 68417 140514608064256 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-INFO 2016-08-20 00:44:46,242 views 68417 140514608064256 RAW POST request : b'{"sprinkler":{"id":"1","status":false}}'
-DEBUG 2016-08-20 00:44:46,249 views 68417 140514608064256 sprinkler port: 12
-DEBUG 2016-08-20 00:44:46,250 views 68417 140514608064256 deactivate sprinkler : 1
-DEBUG 2016-08-20 00:44:46,250 views 68417 140514608064256 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-DEBUG 2016-08-20 00:45:16,284 views 68439 139671191930624 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
-INFO 2016-08-20 00:45:16,289 views 68439 139671191930624 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
-DEBUG 2016-08-20 00:45:16,369 views 68439 139671191930624 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
-DEBUG 2016-08-20 00:45:20,852 views 68439 139671191930624 beginning views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":true}}
-INFO 2016-08-20 00:45:20,853 views 68439 139671191930624 RAW POST request : b'{"sprinkler":{"id":"4","status":true}}'
-DEBUG 2016-08-20 00:45:20,857 views 68439 139671191930624 sprinkler port: 22
-DEBUG 2016-08-20 00:45:20,860 views 68439 139671191930624 activate sprinkler : 4
-DEBUG 2016-08-20 00:45:20,861 views 68439 139671191930624 end views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":true}}
-DEBUG 2016-08-20 00:45:22,690 views 68439 139671191930624 beginning views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":false}}
-INFO 2016-08-20 00:45:22,691 views 68439 139671191930624 RAW POST request : b'{"sprinkler":{"id":"4","status":false}}'
-DEBUG 2016-08-20 00:45:22,693 views 68439 139671191930624 sprinkler port: 22
-DEBUG 2016-08-20 00:45:22,693 views 68439 139671191930624 deactivate sprinkler : 4
-DEBUG 2016-08-20 00:45:22,694 views 68439 139671191930624 end views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":false}}
-DEBUG 2016-08-20 00:45:33,754 views 68467 139768803632896 beginning views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":true}}
-INFO 2016-08-20 00:45:33,754 views 68467 139768803632896 RAW POST request : b'{"sprinkler":{"id":"4","status":true}}'
-DEBUG 2016-08-20 00:45:33,787 views 68467 139768803632896 sprinkler port: 22
-DEBUG 2016-08-20 00:45:33,787 views 68467 139768803632896 activate sprinkler : 4
-DEBUG 2016-08-20 00:45:33,788 views 68467 139768803632896 end views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":true}}
-DEBUG 2016-08-20 00:45:34,887 views 68467 139768803632896 beginning views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":false}}
-INFO 2016-08-20 00:45:34,888 views 68467 139768803632896 RAW POST request : b'{"sprinkler":{"id":"4","status":false}}'
-DEBUG 2016-08-20 00:45:34,890 views 68467 139768803632896 sprinkler port: 22
-DEBUG 2016-08-20 00:45:34,890 views 68467 139768803632896 deactivate sprinkler : 4
-DEBUG 2016-08-20 00:45:34,891 views 68467 139768803632896 end views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":false}}
-DEBUG 2016-08-20 00:47:40,018 views 68533 140363332482816 beginning views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":true}}
-INFO 2016-08-20 00:47:40,019 views 68533 140363332482816 RAW POST request : b'{"sprinkler":{"id":"4","status":true}}'
-DEBUG 2016-08-20 00:47:40,028 views 68533 140363332482816 sprinkler port: 22
-DEBUG 2016-08-20 00:47:40,029 views 68533 140363332482816 activate sprinkler : 4
-DEBUG 2016-08-20 00:47:40,032 views 68533 140363332482816 end views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":true}}
-DEBUG 2016-08-20 00:47:41,007 views 68533 140363332482816 beginning views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":false}}
-INFO 2016-08-20 00:47:41,008 views 68533 140363332482816 RAW POST request : b'{"sprinkler":{"id":"4","status":false}}'
-DEBUG 2016-08-20 00:47:41,010 views 68533 140363332482816 sprinkler port: 22
-DEBUG 2016-08-20 00:47:41,011 views 68533 140363332482816 deactivate sprinkler : 4
-DEBUG 2016-08-20 00:47:41,011 views 68533 140363332482816 end views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":false}}
-DEBUG 2016-08-20 00:47:48,407 views 68544 139793635612416 beginning views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":true}}
-INFO 2016-08-20 00:47:48,409 views 68544 139793635612416 RAW POST request : b'{"sprinkler":{"id":"4","status":true}}'
-DEBUG 2016-08-20 00:47:48,419 views 68544 139793635612416 sprinkler port: 22
-DEBUG 2016-08-20 00:47:48,420 views 68544 139793635612416 activate sprinkler : 4
-DEBUG 2016-08-20 00:47:48,420 views 68544 139793635612416 end views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":true}}
-DEBUG 2016-08-20 00:47:49,321 views 68544 139793635612416 beginning views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":false}}
-INFO 2016-08-20 00:47:49,321 views 68544 139793635612416 RAW POST request : b'{"sprinkler":{"id":"4","status":false}}'
-DEBUG 2016-08-20 00:47:49,323 views 68544 139793635612416 sprinkler port: 22
-DEBUG 2016-08-20 00:47:49,324 views 68544 139793635612416 deactivate sprinkler : 4
-DEBUG 2016-08-20 00:47:49,325 views 68544 139793635612416 end views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":false}}
-DEBUG 2016-08-20 00:47:59,885 views 68557 140284048504576 beginning views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":true}}
-INFO 2016-08-20 00:47:59,886 views 68557 140284048504576 RAW POST request : b'{"sprinkler":{"id":"4","status":true}}'
-DEBUG 2016-08-20 00:47:59,896 views 68557 140284048504576 sprinkler port: 22
-DEBUG 2016-08-20 00:47:59,897 views 68557 140284048504576 activate sprinkler : 4
-DEBUG 2016-08-20 00:47:59,897 views 68557 140284048504576 end views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":true}}
-DEBUG 2016-08-20 00:48:00,980 views 68557 140284048504576 beginning views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":false}}
-INFO 2016-08-20 00:48:00,980 views 68557 140284048504576 RAW POST request : b'{"sprinkler":{"id":"4","status":false}}'
-DEBUG 2016-08-20 00:48:00,982 views 68557 140284048504576 sprinkler port: 22
-DEBUG 2016-08-20 00:48:00,983 views 68557 140284048504576 deactivate sprinkler : 4
-DEBUG 2016-08-20 00:48:00,984 views 68557 140284048504576 end views.act for sprinkler_id: 4 with request: {"sprinkler":{"id":"4","status":false}}
-DEBUG 2016-08-20 00:50:10,656 views 68598 140683329328896 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
-INFO 2016-08-20 00:50:10,671 views 68598 140683329328896 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
-DEBUG 2016-08-20 00:50:10,749 views 68598 140683329328896 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
-DEBUG 2016-08-20 00:50:16,425 views 68598 140683329328896 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-INFO 2016-08-20 00:50:16,425 views 68598 140683329328896 RAW POST request : b'{"sprinkler":{"id":"1","status":true}}'
-DEBUG 2016-08-20 00:50:16,428 views 68598 140683329328896 sprinkler port: 12
-DEBUG 2016-08-20 00:50:16,430 views 68598 140683329328896 activate sprinkler : 1
-DEBUG 2016-08-20 00:50:16,431 views 68598 140683329328896 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-DEBUG 2016-08-20 00:50:17,608 views 68598 140683329328896 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-INFO 2016-08-20 00:50:17,608 views 68598 140683329328896 RAW POST request : b'{"sprinkler":{"id":"1","status":false}}'
-DEBUG 2016-08-20 00:50:17,610 views 68598 140683329328896 sprinkler port: 12
-DEBUG 2016-08-20 00:50:17,611 views 68598 140683329328896 deactivate sprinkler : 1
-DEBUG 2016-08-20 00:50:17,611 views 68598 140683329328896 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-DEBUG 2016-08-20 00:50:25,635 views 68622 140110377387776 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-INFO 2016-08-20 00:50:25,635 views 68622 140110377387776 RAW POST request : b'{"sprinkler":{"id":"1","status":true}}'
-DEBUG 2016-08-20 00:50:25,648 views 68622 140110377387776 sprinkler port: 12
-DEBUG 2016-08-20 00:50:25,649 views 68622 140110377387776 activate sprinkler : 1
-DEBUG 2016-08-20 00:50:25,650 views 68622 140110377387776 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-DEBUG 2016-08-20 00:50:26,298 views 68622 140110377387776 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-INFO 2016-08-20 00:50:26,298 views 68622 140110377387776 RAW POST request : b'{"sprinkler":{"id":"1","status":false}}'
-DEBUG 2016-08-20 00:50:26,301 views 68622 140110377387776 sprinkler port: 12
-DEBUG 2016-08-20 00:50:26,301 views 68622 140110377387776 deactivate sprinkler : 1
-DEBUG 2016-08-20 00:50:26,302 views 68622 140110377387776 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-DEBUG 2016-08-20 00:52:17,937 views 68661 140530616542976 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-INFO 2016-08-20 00:52:17,937 views 68661 140530616542976 RAW POST request : b'{"sprinkler":{"id":"1","status":true}}'
-DEBUG 2016-08-20 00:52:17,945 views 68661 140530616542976 sprinkler port: 12
-DEBUG 2016-08-20 00:52:17,950 views 68661 140530616542976 activate sprinkler : 1
-DEBUG 2016-08-20 00:52:17,958 views 68661 140530616542976 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-DEBUG 2016-08-20 00:52:18,876 views 68661 140530616542976 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-INFO 2016-08-20 00:52:18,876 views 68661 140530616542976 RAW POST request : b'{"sprinkler":{"id":"1","status":false}}'
-DEBUG 2016-08-20 00:52:18,878 views 68661 140530616542976 sprinkler port: 12
-DEBUG 2016-08-20 00:52:18,879 views 68661 140530616542976 deactivate sprinkler : 1
-DEBUG 2016-08-20 00:52:18,879 views 68661 140530616542976 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-DEBUG 2016-08-20 00:53:27,919 views 68699 140339702769408 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-INFO 2016-08-20 00:53:27,923 views 68699 140339702769408 RAW POST request : b'{"sprinkler":{"id":"1","status":true}}'
-DEBUG 2016-08-20 00:53:27,928 views 68699 140339702769408 sprinkler port: 12
-DEBUG 2016-08-20 00:53:27,930 views 68699 140339702769408 activate sprinkler : 1
-DEBUG 2016-08-20 00:53:27,935 views 68699 140339702769408 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-DEBUG 2016-08-20 00:53:28,862 views 68699 140339702769408 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-INFO 2016-08-20 00:53:28,863 views 68699 140339702769408 RAW POST request : b'{"sprinkler":{"id":"1","status":false}}'
-DEBUG 2016-08-20 00:53:28,865 views 68699 140339702769408 sprinkler port: 12
-DEBUG 2016-08-20 00:53:28,866 views 68699 140339702769408 deactivate sprinkler : 1
-DEBUG 2016-08-20 00:53:28,868 views 68699 140339702769408 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-DEBUG 2016-08-20 00:53:38,561 views 68714 140638554760960 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-INFO 2016-08-20 00:53:38,561 views 68714 140638554760960 RAW POST request : b'{"sprinkler":{"id":"1","status":true}}'
-DEBUG 2016-08-20 00:53:38,566 views 68714 140638554760960 sprinkler port: 12
-DEBUG 2016-08-20 00:53:38,567 views 68714 140638554760960 activate sprinkler : 1
-DEBUG 2016-08-20 00:53:38,571 views 68714 140638554760960 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-DEBUG 2016-08-20 00:53:39,278 views 68714 140638554760960 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-INFO 2016-08-20 00:53:39,278 views 68714 140638554760960 RAW POST request : b'{"sprinkler":{"id":"1","status":false}}'
-DEBUG 2016-08-20 00:53:39,281 views 68714 140638554760960 sprinkler port: 12
-DEBUG 2016-08-20 00:53:39,281 views 68714 140638554760960 deactivate sprinkler : 1
-DEBUG 2016-08-20 00:53:39,282 views 68714 140638554760960 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-DEBUG 2016-08-20 00:53:54,731 views 68730 140460862547712 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-INFO 2016-08-20 00:53:54,732 views 68730 140460862547712 RAW POST request : b'{"sprinkler":{"id":"1","status":true}}'
-DEBUG 2016-08-20 00:53:54,740 views 68730 140460862547712 sprinkler port: 12
-DEBUG 2016-08-20 00:53:54,742 views 68730 140460862547712 activate sprinkler : 1
-DEBUG 2016-08-20 00:53:54,751 views 68730 140460862547712 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-DEBUG 2016-08-20 00:53:55,231 views 68730 140460862547712 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-INFO 2016-08-20 00:53:55,231 views 68730 140460862547712 RAW POST request : b'{"sprinkler":{"id":"1","status":false}}'
-DEBUG 2016-08-20 00:53:55,234 views 68730 140460862547712 sprinkler port: 12
-DEBUG 2016-08-20 00:53:55,234 views 68730 140460862547712 deactivate sprinkler : 1
-DEBUG 2016-08-20 00:53:55,235 views 68730 140460862547712 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-DEBUG 2016-08-20 00:54:02,256 views 68742 140404888667904 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-INFO 2016-08-20 00:54:02,256 views 68742 140404888667904 RAW POST request : b'{"sprinkler":{"id":"1","status":true}}'
-DEBUG 2016-08-20 00:54:02,259 views 68742 140404888667904 sprinkler port: 12
-DEBUG 2016-08-20 00:54:02,262 views 68742 140404888667904 activate sprinkler : 1
-DEBUG 2016-08-20 00:54:02,269 views 68742 140404888667904 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-DEBUG 2016-08-20 00:54:03,202 views 68742 140404888667904 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-INFO 2016-08-20 00:54:03,203 views 68742 140404888667904 RAW POST request : b'{"sprinkler":{"id":"1","status":false}}'
-DEBUG 2016-08-20 00:54:03,205 views 68742 140404888667904 sprinkler port: 12
-DEBUG 2016-08-20 00:54:03,205 views 68742 140404888667904 deactivate sprinkler : 1
-DEBUG 2016-08-20 00:54:03,206 views 68742 140404888667904 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":false}}
-DEBUG 2016-08-20 00:57:16,587 views 68820 140514162226944 beginning views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
-INFO 2016-08-20 00:57:16,587 views 68820 140514162226944 RAW POST request : b'{"sprinkler":{"id":"1","status":true}}'
-DEBUG 2016-08-20 00:57:16,590 views 68820 140514162226944 sprinkler port: 12
-DEBUG 2016-08-20 00:57:16,590 views 68820 140514162226944 activate sprinkler : 1
-DEBUG 2016-08-20 00:57:16,591 views 68820 140514162226944 end views.act for sprinkler_id: 1 with request: {"sprinkler":{"id":"1","status":true}}
+DEBUG 2016-09-01 22:12:37,842 views 91745 140071885629184 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:12:37,859 views 91745 140071885629184 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-01 22:12:37,959 views 91745 140071885629184 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:21:24,864 views 91745 140071499986688 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:21:24,869 views 91745 140071499986688 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-01 22:21:24,898 views 91745 140071499986688 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:21:41,434 views 91745 140071857739520 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:21:41,456 views 91745 140071857739520 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-01 22:21:41,473 views 91745 140071857739520 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:21:52,870 views 91745 140071857739520 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:21:52,881 views 91745 140071857739520 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-01 22:21:52,929 views 91745 140071857739520 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:25:53,013 views 92006 140407432959744 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:25:53,029 views 92006 140407432959744 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-01 22:25:53,095 views 92006 140407432959744 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:26:32,679 views 92006 140407413462784 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:26:32,686 views 92006 140407413462784 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-01 22:26:32,717 views 92006 140407413462784 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:27:16,742 views 92006 140407413462784 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:27:16,754 views 92006 140407413462784 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-01 22:27:16,774 views 92006 140407413462784 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:28:29,018 views 92006 140406910088960 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:28:29,025 views 92006 140406910088960 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-01 22:28:29,067 views 92006 140406910088960 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:29:36,531 views 92172 139835276785408 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:29:36,548 views 92172 139835276785408 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-01 22:29:36,616 views 92172 139835276785408 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:29:39,323 views 92172 139835232634624 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:29:39,323 views 92172 139835232634624 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:29:39,323 views 92172 139835232634624 session id: 1
+DEBUG 2016-09-01 22:29:39,324 views 92172 139835232634624 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:31:20,590 views 92235 140652595640064 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:31:20,604 views 92235 140652595640064 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-01 22:31:20,687 views 92235 140652595640064 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:31:24,681 views 92235 140652595640064 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:31:24,682 views 92235 140652595640064 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:31:24,683 views 92235 140652595640064 session id: 1
+DEBUG 2016-09-01 22:31:24,687 views 92235 140652595640064 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:34:37,552 views 92235 140652595640064 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:34:37,552 views 92235 140652595640064 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:34:37,552 views 92235 140652595640064 session id: 1
+DEBUG 2016-09-01 22:34:37,552 views 92235 140652595640064 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:35:24,006 views 92339 140066861672192 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:35:24,017 views 92339 140066861672192 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 22:35:24,098 views 92339 140066861672192 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:35:26,524 views 92339 140066861672192 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:35:26,524 views 92339 140066861672192 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:35:26,525 views 92339 140066861672192 session id: 1
+DEBUG 2016-09-01 22:35:26,525 views 92339 140066861672192 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:37:38,065 views 92403 139968219444992 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:37:38,073 views 92403 139968219444992 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 22:37:38,116 views 92403 139968219444992 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:37:40,653 views 92403 139968192079616 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:37:40,653 views 92403 139968192079616 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:37:40,653 views 92403 139968192079616 session id: 1
+DEBUG 2016-09-01 22:37:40,654 views 92403 139968192079616 views.temp created data JSON with content: {"sessionid": 1, "temperature": 0, "humidity": 0}
+DEBUG 2016-09-01 22:37:40,654 views 92403 139968192079616 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:38:29,218 views 92443 140111182161664 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:38:29,225 views 92443 140111182161664 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 22:38:29,280 views 92443 140111182161664 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:38:31,789 views 92443 140111171057408 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:38:31,789 views 92443 140111171057408 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:38:31,790 views 92443 140111171057408 session id: 1
+DEBUG 2016-09-01 22:38:31,790 views 92443 140111171057408 views.temp created data JSON with content: {"humidity": 0, "sessionid": 1, "temperature": 0}
+DEBUG 2016-09-01 22:38:31,790 views 92443 140111171057408 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:44:03,996 views 92507 140236538001152 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:44:04,017 views 92507 140236538001152 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-01 22:44:04,067 views 92507 140236538001152 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:44:06,015 views 92507 140236453574400 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:44:06,016 views 92507 140236453574400 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:44:06,016 views 92507 140236453574400 session id: 1
+DEBUG 2016-09-01 22:44:06,017 views 92507 140236453574400 views.temp created data JSON with content: {"temperature": 0, "humidity": 0, "sessionid": 1}
+DEBUG 2016-09-01 22:44:06,017 views 92507 140236453574400 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:51:13,075 views 92717 140441739589376 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:51:13,086 views 92717 140441739589376 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-01 22:51:13,123 views 92717 140441739589376 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:51:15,457 views 92717 140441714411264 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:51:15,458 views 92717 140441714411264 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:51:15,458 views 92717 140441714411264 session id: 1
+DEBUG 2016-09-01 22:51:15,458 views 92717 140441714411264 views.temp created data JSON with content: {"humidity": 0, "temperature": 0, "sessionid": 1}
+DEBUG 2016-09-01 22:51:15,459 views 92717 140441714411264 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:52:46,502 views 92766 139701172037376 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:52:46,519 views 92766 139701172037376 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 22:52:46,576 views 92766 139701172037376 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:52:49,122 views 92766 139701135755008 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:52:49,122 views 92766 139701135755008 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:52:49,122 views 92766 139701135755008 session id: 1
+DEBUG 2016-09-01 22:52:49,123 views 92766 139701135755008 views.temp created data JSON with content: {"humidity": 40, "temperature": 21, "sessionid": 1}
+DEBUG 2016-09-01 22:52:49,123 views 92766 139701135755008 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:54:09,203 views 92817 139696428545792 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:54:09,211 views 92817 139696428545792 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 22:54:09,274 views 92817 139696428545792 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:54:11,254 views 92817 139696394974976 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:54:11,254 views 92817 139696394974976 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:54:11,254 views 92817 139696394974976 session id: 1
+DEBUG 2016-09-01 22:54:11,255 views 92817 139696394974976 views.temp created data JSON with content: {"humidity": 40, "sessionid": 1, "temperature": 21}
+DEBUG 2016-09-01 22:54:11,255 views 92817 139696394974976 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:56:29,399 views 92817 139696394974976 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:56:29,415 views 92817 139696394974976 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 22:56:29,446 views 92817 139696394974976 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:56:31,682 views 92817 139696428545792 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:56:31,682 views 92817 139696428545792 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:56:31,683 views 92817 139696428545792 session id: 1
+DEBUG 2016-09-01 22:56:31,683 views 92817 139696428545792 views.temp created data JSON with content: {"humidity": 40, "sessionid": 1, "temperature": 21}
+DEBUG 2016-09-01 22:56:31,683 views 92817 139696428545792 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:56:33,723 views 92817 139696428545792 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:56:33,723 views 92817 139696428545792 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:56:33,723 views 92817 139696428545792 session id: 1
+DEBUG 2016-09-01 22:56:33,724 views 92817 139696428545792 views.temp created data JSON with content: {"humidity": 40, "sessionid": 1, "temperature": 21}
+DEBUG 2016-09-01 22:56:33,724 views 92817 139696428545792 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:56:35,174 views 92817 139696428545792 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:56:35,174 views 92817 139696428545792 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:56:35,174 views 92817 139696428545792 session id: 1
+DEBUG 2016-09-01 22:56:35,174 views 92817 139696428545792 views.temp created data JSON with content: {"humidity": 40, "sessionid": 1, "temperature": 21}
+DEBUG 2016-09-01 22:56:35,174 views 92817 139696428545792 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:56:35,888 views 92817 139696428545792 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:56:35,888 views 92817 139696428545792 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:56:35,888 views 92817 139696428545792 session id: 1
+DEBUG 2016-09-01 22:56:35,889 views 92817 139696428545792 views.temp created data JSON with content: {"humidity": 40, "sessionid": 1, "temperature": 21}
+DEBUG 2016-09-01 22:56:35,889 views 92817 139696428545792 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:56:36,166 views 92817 139696428545792 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:56:36,167 views 92817 139696428545792 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:56:36,167 views 92817 139696428545792 session id: 1
+DEBUG 2016-09-01 22:56:36,167 views 92817 139696428545792 views.temp created data JSON with content: {"humidity": 40, "sessionid": 1, "temperature": 21}
+DEBUG 2016-09-01 22:56:36,168 views 92817 139696428545792 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:56:36,410 views 92817 139696428545792 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:56:36,410 views 92817 139696428545792 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:56:36,411 views 92817 139696428545792 session id: 1
+DEBUG 2016-09-01 22:56:36,411 views 92817 139696428545792 views.temp created data JSON with content: {"humidity": 40, "sessionid": 1, "temperature": 21}
+DEBUG 2016-09-01 22:56:36,411 views 92817 139696428545792 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:57:14,992 views 92817 139696428545792 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:57:15,000 views 92817 139696428545792 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 22:57:15,024 views 92817 139696428545792 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:57:17,077 views 92817 139696394974976 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:57:17,078 views 92817 139696394974976 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:57:17,078 views 92817 139696394974976 session id: 1
+DEBUG 2016-09-01 22:57:17,078 views 92817 139696394974976 views.temp created data JSON with content: {"humidity": 40, "sessionid": 1, "temperature": 21}
+DEBUG 2016-09-01 22:57:17,078 views 92817 139696394974976 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:58:19,892 views 92817 139696394974976 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:58:19,897 views 92817 139696394974976 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 22:58:19,907 views 92817 139696394974976 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:58:22,087 views 92817 139696378189568 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:58:22,088 views 92817 139696378189568 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:58:22,088 views 92817 139696378189568 session id: 1
+DEBUG 2016-09-01 22:58:22,088 views 92817 139696378189568 views.temp created data JSON with content: {"humidity": 40, "sessionid": 1, "temperature": 21}
+DEBUG 2016-09-01 22:58:22,089 views 92817 139696378189568 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:59:45,276 views 92817 139696378189568 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:59:45,276 views 92817 139696378189568 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:59:45,276 views 92817 139696378189568 session id: 1
+DEBUG 2016-09-01 22:59:45,277 views 92817 139696378189568 views.temp created data JSON with content: {"humidity": 40, "sessionid": 1, "temperature": 21}
+DEBUG 2016-09-01 22:59:45,277 views 92817 139696378189568 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 22:59:47,824 views 92817 139696378189568 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 22:59:47,832 views 92817 139696378189568 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 22:59:47,849 views 92817 139696378189568 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 22:59:50,082 views 92817 139696378189568 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 22:59:50,082 views 92817 139696378189568 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 22:59:50,082 views 92817 139696378189568 session id: 1
+DEBUG 2016-09-01 22:59:50,083 views 92817 139696378189568 views.temp created data JSON with content: {"humidity": 40, "sessionid": 1, "temperature": 21}
+DEBUG 2016-09-01 22:59:50,083 views 92817 139696378189568 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 23:00:09,296 views 92817 139696378189568 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 23:00:09,308 views 92817 139696378189568 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 23:00:09,349 views 92817 139696378189568 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 23:00:11,780 views 92817 139696394974976 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 23:00:11,780 views 92817 139696394974976 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 23:00:11,780 views 92817 139696394974976 session id: 1
+DEBUG 2016-09-01 23:00:11,781 views 92817 139696394974976 views.temp created data JSON with content: {"humidity": 40, "sessionid": 1, "temperature": 21}
+DEBUG 2016-09-01 23:00:11,781 views 92817 139696394974976 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 23:00:44,110 views 92817 139696394974976 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 23:00:44,132 views 92817 139696394974976 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 23:00:44,153 views 92817 139696394974976 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 23:00:46,069 views 92817 139696386582272 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 23:00:46,072 views 92817 139696386582272 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 23:00:46,072 views 92817 139696386582272 session id: 1
+DEBUG 2016-09-01 23:00:46,073 views 92817 139696386582272 views.temp created data JSON with content: {"humidity": 40, "sessionid": 1, "temperature": 21}
+DEBUG 2016-09-01 23:00:46,073 views 92817 139696386582272 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 23:01:36,884 views 93116 140085439244032 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 23:01:36,902 views 93116 140085439244032 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 23:01:36,949 views 93116 140085439244032 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 23:01:39,194 views 93116 140085428139776 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 23:01:39,194 views 93116 140085428139776 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 23:01:39,194 views 93116 140085428139776 session id: 1
+DEBUG 2016-09-01 23:01:39,195 views 93116 140085428139776 views.temp created data JSON with content: {"humidity": "40", "temperature": "21", "sessionid": 1}
+DEBUG 2016-09-01 23:01:39,195 views 93116 140085428139776 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 23:01:51,158 views 93116 140085428139776 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 23:01:51,164 views 93116 140085428139776 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 23:01:51,192 views 93116 140085428139776 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 23:01:54,327 views 93116 140085428139776 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 23:01:54,327 views 93116 140085428139776 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 23:01:54,328 views 93116 140085428139776 session id: 1
+DEBUG 2016-09-01 23:01:54,328 views 93116 140085428139776 views.temp created data JSON with content: {"humidity": "40", "temperature": "21", "sessionid": 1}
+DEBUG 2016-09-01 23:01:54,328 views 93116 140085428139776 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 23:01:58,462 views 93116 140085428139776 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 23:01:58,462 views 93116 140085428139776 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 23:01:58,462 views 93116 140085428139776 session id: 1
+DEBUG 2016-09-01 23:01:58,462 views 93116 140085428139776 views.temp created data JSON with content: {"humidity": "40", "temperature": "21", "sessionid": 1}
+DEBUG 2016-09-01 23:01:58,462 views 93116 140085428139776 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 23:03:32,770 views 93116 140085428139776 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 23:03:32,779 views 93116 140085428139776 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 23:03:32,820 views 93116 140085428139776 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 23:03:34,940 views 93116 140085055977216 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 23:03:34,940 views 93116 140085055977216 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 23:03:34,941 views 93116 140085055977216 session id: 1
+DEBUG 2016-09-01 23:03:34,941 views 93116 140085055977216 views.temp created data JSON with content: {"humidity": "40", "temperature": "21", "sessionid": 1}
+DEBUG 2016-09-01 23:03:34,941 views 93116 140085055977216 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 23:03:50,177 views 93116 140085055977216 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 23:03:50,189 views 93116 140085055977216 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 23:03:50,216 views 93116 140085055977216 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 23:03:52,386 views 93116 140085428139776 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 23:03:52,389 views 93116 140085428139776 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 23:03:52,391 views 93116 140085428139776 session id: 1
+DEBUG 2016-09-01 23:03:52,392 views 93116 140085428139776 views.temp created data JSON with content: {"humidity": "40", "temperature": "21", "sessionid": 1}
+DEBUG 2016-09-01 23:03:52,392 views 93116 140085428139776 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 23:05:28,251 views 93116 140085428139776 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 23:05:28,254 views 93116 140085428139776 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 23:05:28,265 views 93116 140085428139776 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 23:05:30,233 views 93116 140085439244032 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 23:05:30,234 views 93116 140085439244032 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 23:05:30,234 views 93116 140085439244032 session id: 1
+DEBUG 2016-09-01 23:05:30,234 views 93116 140085439244032 views.temp created data JSON with content: {"humidity": "40", "temperature": "21", "sessionid": 1}
+DEBUG 2016-09-01 23:05:30,235 views 93116 140085439244032 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 23:06:00,889 views 93116 140085439244032 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 23:06:00,894 views 93116 140085439244032 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 23:06:00,934 views 93116 140085439244032 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 23:06:03,047 views 93116 140085402699520 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 23:06:03,048 views 93116 140085402699520 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 23:06:03,048 views 93116 140085402699520 session id: 1
+DEBUG 2016-09-01 23:06:03,048 views 93116 140085402699520 views.temp created data JSON with content: {"humidity": "40", "temperature": "21", "sessionid": 1}
+DEBUG 2016-09-01 23:06:03,048 views 93116 140085402699520 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 23:07:45,461 views 93116 140085402699520 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 23:07:45,468 views 93116 140085402699520 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 23:07:45,498 views 93116 140085402699520 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 23:07:54,389 views 93116 140085428139776 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 23:07:54,389 views 93116 140085428139776 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 23:07:54,389 views 93116 140085428139776 session id: 1
+DEBUG 2016-09-01 23:07:54,390 views 93116 140085428139776 views.temp created data JSON with content: {"humidity": "40", "temperature": "21", "sessionid": 1}
+DEBUG 2016-09-01 23:07:54,390 views 93116 140085428139776 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 23:08:04,557 views 93116 140085428139776 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 23:08:04,566 views 93116 140085428139776 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 23:08:04,615 views 93116 140085428139776 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 23:08:07,460 views 93116 140085402699520 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 23:08:07,461 views 93116 140085402699520 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 23:08:07,461 views 93116 140085402699520 session id: 1
+DEBUG 2016-09-01 23:08:07,462 views 93116 140085402699520 views.temp created data JSON with content: {"humidity": "40", "temperature": "21", "sessionid": 1}
+DEBUG 2016-09-01 23:08:07,462 views 93116 140085402699520 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-01 23:08:31,810 views 93116 140085402699520 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-01 23:08:31,828 views 93116 140085402699520 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-01 23:08:31,865 views 93116 140085402699520 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-01 23:08:33,904 views 93116 140085411092224 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-01 23:08:33,904 views 93116 140085411092224 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-01 23:08:33,904 views 93116 140085411092224 session id: 1
+DEBUG 2016-09-01 23:08:33,905 views 93116 140085411092224 views.temp created data JSON with content: {"humidity": "40", "temperature": "21", "sessionid": 1}
+DEBUG 2016-09-01 23:08:33,905 views 93116 140085411092224 end views.temp with request: {"sessionid":1}

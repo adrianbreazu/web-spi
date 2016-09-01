@@ -55,16 +55,13 @@ class Sprinkler:
         finally:
             logger.debug("end of change_state for pin {0} state to {1}".format(pinout, gpio_state))
 
-    def cleanup(self):
-        print("beginning cleanup")
-        print("pinout_list array = {0}".format(self.pinout_list))
+    def deactivate_all(self):
+        print("beginning cleanup, pinout_list array = {0}".format(self.pinout_list))
         if len(self.pinout_list):
             for pin in self.pinout_list:
                 print("deactivate pin: {0}".format(pin))
-                self.deactivate(pin)
-        GPIO.cleanup()
-        print("finish RPI cleanup")
-        print("end of cleanup")
+                self.deactivate(pinout=int(pin))
 
     def __del__(self):
-        self.cleanup()
+        GPIO.cleanup
+        print("finish RPI cleanup")

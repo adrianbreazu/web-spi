@@ -1,199 +1,141 @@
-DEBUG 2016-08-20 00:40:33,010 sprinkler 68308 139941860673280 beginning of __init__
-DEBUG 2016-08-20 00:40:33,010 sprinkler 68308 139941860673280 end of __init__
-DEBUG 2016-08-20 00:40:40,551 sprinkler 68308 139941770159872 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:40:40,551 sprinkler 68308 139941770159872 set pin 12
-DEBUG 2016-08-20 00:40:40,551 sprinkler 68308 139941770159872 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:40:40,551 sprinkler 68308 139941770159872 beginning of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:40:40,552 sprinkler 68308 139941770159872 end of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:40:42,991 sprinkler 68308 139941770159872 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:40:42,991 sprinkler 68308 139941770159872 pin: 12 already exists
-DEBUG 2016-08-20 00:40:42,991 sprinkler 68308 139941770159872 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:40:42,991 sprinkler 68308 139941770159872 beginning of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:40:42,991 sprinkler 68308 139941770159872 end of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:41:44,275 sprinkler 68339 140159342327552 beginning of __init__
-DEBUG 2016-08-20 00:41:44,276 sprinkler 68339 140159342327552 end of __init__
-DEBUG 2016-08-20 00:41:46,762 sprinkler 68339 140159330977536 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:41:46,762 sprinkler 68339 140159330977536 set pin 12
-DEBUG 2016-08-20 00:41:46,762 sprinkler 68339 140159330977536 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:41:46,762 sprinkler 68339 140159330977536 beginning of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:41:46,763 sprinkler 68339 140159330977536 end of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:41:47,844 sprinkler 68339 140159330977536 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:41:47,844 sprinkler 68339 140159330977536 pin: 12 already exists
-DEBUG 2016-08-20 00:41:47,844 sprinkler 68339 140159330977536 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:41:47,844 sprinkler 68339 140159330977536 beginning of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:41:47,844 sprinkler 68339 140159330977536 end of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:44:21,176 sprinkler 68394 139882555713280 beginning of __init__
-DEBUG 2016-08-20 00:44:21,178 sprinkler 68394 139882555713280 end of __init__
-DEBUG 2016-08-20 00:44:31,508 sprinkler 68394 139882544363264 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:44:31,508 sprinkler 68394 139882544363264 set pin 12
-DEBUG 2016-08-20 00:44:31,508 sprinkler 68394 139882544363264 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:44:31,508 sprinkler 68394 139882544363264 beginning of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:44:31,508 sprinkler 68394 139882544363264 end of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:44:33,070 sprinkler 68394 139882544363264 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:44:33,071 sprinkler 68394 139882544363264 pin: 12 already exists
-DEBUG 2016-08-20 00:44:33,071 sprinkler 68394 139882544363264 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:44:33,071 sprinkler 68394 139882544363264 beginning of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:44:33,073 sprinkler 68394 139882544363264 end of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:44:40,123 sprinkler 68417 140514619414272 beginning of __init__
-DEBUG 2016-08-20 00:44:40,123 sprinkler 68417 140514619414272 end of __init__
-DEBUG 2016-08-20 00:44:44,272 sprinkler 68417 140514608064256 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:44:44,272 sprinkler 68417 140514608064256 set pin 12
-DEBUG 2016-08-20 00:44:44,272 sprinkler 68417 140514608064256 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:44:44,272 sprinkler 68417 140514608064256 beginning of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:44:44,273 sprinkler 68417 140514608064256 end of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:44:46,249 sprinkler 68417 140514608064256 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:44:46,250 sprinkler 68417 140514608064256 pin: 12 already exists
-DEBUG 2016-08-20 00:44:46,250 sprinkler 68417 140514608064256 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:44:46,250 sprinkler 68417 140514608064256 beginning of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:44:46,250 sprinkler 68417 140514608064256 end of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:45:13,589 sprinkler 68439 139671203280640 beginning of __init__
-DEBUG 2016-08-20 00:45:13,589 sprinkler 68439 139671203280640 end of __init__
-DEBUG 2016-08-20 00:45:20,858 sprinkler 68439 139671191930624 beginning of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:45:20,859 sprinkler 68439 139671191930624 set pin 22
-DEBUG 2016-08-20 00:45:20,860 sprinkler 68439 139671191930624 end of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:45:20,860 sprinkler 68439 139671191930624 beginning of change_state for pin 22 state to LOW
-DEBUG 2016-08-20 00:45:20,860 sprinkler 68439 139671191930624 end of change_state for pin 22 state to LOW
-DEBUG 2016-08-20 00:45:22,693 sprinkler 68439 139671191930624 beginning of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:45:22,693 sprinkler 68439 139671191930624 pin: 22 already exists
-DEBUG 2016-08-20 00:45:22,693 sprinkler 68439 139671191930624 end of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:45:22,694 sprinkler 68439 139671191930624 beginning of change_state for pin 22 state to HIGH
-DEBUG 2016-08-20 00:45:22,694 sprinkler 68439 139671191930624 end of change_state for pin 22 state to HIGH
-DEBUG 2016-08-20 00:45:31,595 sprinkler 68467 139768814982912 beginning of __init__
-DEBUG 2016-08-20 00:45:31,595 sprinkler 68467 139768814982912 end of __init__
-DEBUG 2016-08-20 00:45:33,787 sprinkler 68467 139768803632896 beginning of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:45:33,787 sprinkler 68467 139768803632896 set pin 22
-DEBUG 2016-08-20 00:45:33,787 sprinkler 68467 139768803632896 end of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:45:33,788 sprinkler 68467 139768803632896 beginning of change_state for pin 22 state to LOW
-DEBUG 2016-08-20 00:45:33,788 sprinkler 68467 139768803632896 end of change_state for pin 22 state to LOW
-DEBUG 2016-08-20 00:45:34,890 sprinkler 68467 139768803632896 beginning of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:45:34,890 sprinkler 68467 139768803632896 pin: 22 already exists
-DEBUG 2016-08-20 00:45:34,890 sprinkler 68467 139768803632896 end of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:45:34,890 sprinkler 68467 139768803632896 beginning of change_state for pin 22 state to HIGH
-DEBUG 2016-08-20 00:45:34,890 sprinkler 68467 139768803632896 end of change_state for pin 22 state to HIGH
-DEBUG 2016-08-20 00:47:38,014 sprinkler 68533 140363343832832 beginning of __init__
-DEBUG 2016-08-20 00:47:38,015 sprinkler 68533 140363343832832 end of __init__
-DEBUG 2016-08-20 00:47:40,029 sprinkler 68533 140363332482816 beginning of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:47:40,029 sprinkler 68533 140363332482816 set pin 22
-DEBUG 2016-08-20 00:47:40,029 sprinkler 68533 140363332482816 end of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:47:40,030 sprinkler 68533 140363332482816 beginning of change_state for pin 22 state to LOW
-DEBUG 2016-08-20 00:47:40,032 sprinkler 68533 140363332482816 end of change_state for pin 22 state to LOW
-DEBUG 2016-08-20 00:47:41,011 sprinkler 68533 140363332482816 beginning of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:47:41,011 sprinkler 68533 140363332482816 pin: 22 already exists
-DEBUG 2016-08-20 00:47:41,011 sprinkler 68533 140363332482816 end of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:47:41,011 sprinkler 68533 140363332482816 beginning of change_state for pin 22 state to HIGH
-DEBUG 2016-08-20 00:47:41,011 sprinkler 68533 140363332482816 end of change_state for pin 22 state to HIGH
-DEBUG 2016-08-20 00:47:45,558 sprinkler 68544 139793646962432 beginning of __init__
-DEBUG 2016-08-20 00:47:45,559 sprinkler 68544 139793646962432 end of __init__
-DEBUG 2016-08-20 00:47:48,419 sprinkler 68544 139793635612416 beginning of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:47:48,420 sprinkler 68544 139793635612416 set pin 22
-DEBUG 2016-08-20 00:47:48,420 sprinkler 68544 139793635612416 end of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:47:48,420 sprinkler 68544 139793635612416 beginning of change_state for pin 22 state to LOW
-DEBUG 2016-08-20 00:47:48,420 sprinkler 68544 139793635612416 end of change_state for pin 22 state to LOW
-DEBUG 2016-08-20 00:47:49,323 sprinkler 68544 139793635612416 beginning of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:47:49,324 sprinkler 68544 139793635612416 pin: 22 already exists
-DEBUG 2016-08-20 00:47:49,324 sprinkler 68544 139793635612416 end of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:47:49,324 sprinkler 68544 139793635612416 beginning of change_state for pin 22 state to HIGH
-DEBUG 2016-08-20 00:47:49,324 sprinkler 68544 139793635612416 end of change_state for pin 22 state to HIGH
-DEBUG 2016-08-20 00:47:56,231 sprinkler 68557 140284059854592 beginning of __init__
-DEBUG 2016-08-20 00:47:56,231 sprinkler 68557 140284059854592 end of __init__
-DEBUG 2016-08-20 00:47:59,896 sprinkler 68557 140284048504576 beginning of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:47:59,896 sprinkler 68557 140284048504576 set pin 22
-DEBUG 2016-08-20 00:47:59,897 sprinkler 68557 140284048504576 end of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:47:59,897 sprinkler 68557 140284048504576 beginning of change_state for pin 22 state to LOW
-DEBUG 2016-08-20 00:47:59,897 sprinkler 68557 140284048504576 end of change_state for pin 22 state to LOW
-DEBUG 2016-08-20 00:48:00,982 sprinkler 68557 140284048504576 beginning of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:48:00,983 sprinkler 68557 140284048504576 pin: 22 already exists
-DEBUG 2016-08-20 00:48:00,983 sprinkler 68557 140284048504576 end of init_GPIO, for pin: 22 and gpio_type: OUT
-DEBUG 2016-08-20 00:48:00,983 sprinkler 68557 140284048504576 beginning of change_state for pin 22 state to HIGH
-DEBUG 2016-08-20 00:48:00,983 sprinkler 68557 140284048504576 end of change_state for pin 22 state to HIGH
-DEBUG 2016-08-20 00:50:07,685 sprinkler 68598 140683409057536 beginning of __init__
-DEBUG 2016-08-20 00:50:07,686 sprinkler 68598 140683409057536 end of __init__
-DEBUG 2016-08-20 00:50:16,428 sprinkler 68598 140683329328896 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:50:16,429 sprinkler 68598 140683329328896 set pin 12
-DEBUG 2016-08-20 00:50:16,430 sprinkler 68598 140683329328896 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:50:16,430 sprinkler 68598 140683329328896 beginning of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:50:16,430 sprinkler 68598 140683329328896 end of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:50:17,611 sprinkler 68598 140683329328896 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:50:17,611 sprinkler 68598 140683329328896 pin: 12 already exists
-DEBUG 2016-08-20 00:50:17,611 sprinkler 68598 140683329328896 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:50:17,611 sprinkler 68598 140683329328896 beginning of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:50:17,611 sprinkler 68598 140683329328896 end of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:50:23,194 sprinkler 68622 140110388737792 beginning of __init__
-DEBUG 2016-08-20 00:50:23,195 sprinkler 68622 140110388737792 end of __init__
-DEBUG 2016-08-20 00:50:25,648 sprinkler 68622 140110377387776 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:50:25,648 sprinkler 68622 140110377387776 set pin 12
-DEBUG 2016-08-20 00:50:25,648 sprinkler 68622 140110377387776 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:50:25,649 sprinkler 68622 140110377387776 beginning of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:50:25,649 sprinkler 68622 140110377387776 end of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:50:26,301 sprinkler 68622 140110377387776 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:50:26,301 sprinkler 68622 140110377387776 pin: 12 already exists
-DEBUG 2016-08-20 00:50:26,301 sprinkler 68622 140110377387776 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:50:26,301 sprinkler 68622 140110377387776 beginning of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:50:26,302 sprinkler 68622 140110377387776 end of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:52:09,954 sprinkler 68661 140530627892992 beginning of __init__
-DEBUG 2016-08-20 00:52:09,954 sprinkler 68661 140530627892992 end of __init__
-DEBUG 2016-08-20 00:52:17,946 sprinkler 68661 140530616542976 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:52:17,947 sprinkler 68661 140530616542976 set pin 12
-DEBUG 2016-08-20 00:52:17,949 sprinkler 68661 140530616542976 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:52:17,955 sprinkler 68661 140530616542976 beginning of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:52:17,957 sprinkler 68661 140530616542976 end of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:52:18,878 sprinkler 68661 140530616542976 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:52:18,879 sprinkler 68661 140530616542976 pin: 12 already exists
-DEBUG 2016-08-20 00:52:18,879 sprinkler 68661 140530616542976 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:52:18,879 sprinkler 68661 140530616542976 beginning of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:52:18,879 sprinkler 68661 140530616542976 end of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:53:24,526 sprinkler 68699 140339714119424 beginning of __init__
-DEBUG 2016-08-20 00:53:24,527 sprinkler 68699 140339714119424 end of __init__
-DEBUG 2016-08-20 00:53:27,929 sprinkler 68699 140339702769408 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:53:27,929 sprinkler 68699 140339702769408 set pin 12
-DEBUG 2016-08-20 00:53:27,930 sprinkler 68699 140339702769408 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:53:27,932 sprinkler 68699 140339702769408 beginning of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:53:27,933 sprinkler 68699 140339702769408 end of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:53:28,866 sprinkler 68699 140339702769408 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:53:28,866 sprinkler 68699 140339702769408 pin: 12 already exists
-DEBUG 2016-08-20 00:53:28,866 sprinkler 68699 140339702769408 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:53:28,867 sprinkler 68699 140339702769408 beginning of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:53:28,867 sprinkler 68699 140339702769408 end of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:53:35,045 sprinkler 68714 140638566110976 beginning of __init__
-DEBUG 2016-08-20 00:53:35,046 sprinkler 68714 140638566110976 end of __init__
-DEBUG 2016-08-20 00:53:38,566 sprinkler 68714 140638554760960 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:53:38,567 sprinkler 68714 140638554760960 set pin 12
-DEBUG 2016-08-20 00:53:38,567 sprinkler 68714 140638554760960 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:53:38,567 sprinkler 68714 140638554760960 beginning of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:53:38,569 sprinkler 68714 140638554760960 end of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:53:39,281 sprinkler 68714 140638554760960 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:53:39,281 sprinkler 68714 140638554760960 pin: 12 already exists
-DEBUG 2016-08-20 00:53:39,281 sprinkler 68714 140638554760960 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:53:39,281 sprinkler 68714 140638554760960 beginning of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:53:39,281 sprinkler 68714 140638554760960 end of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:53:52,870 sprinkler 68730 140460873897728 beginning of __init__
-DEBUG 2016-08-20 00:53:52,870 sprinkler 68730 140460873897728 end of __init__
-DEBUG 2016-08-20 00:53:54,741 sprinkler 68730 140460862547712 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:53:54,742 sprinkler 68730 140460862547712 set pin 12
-DEBUG 2016-08-20 00:53:54,742 sprinkler 68730 140460862547712 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:53:54,742 sprinkler 68730 140460862547712 beginning of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:53:54,743 sprinkler 68730 140460862547712 end of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:53:55,234 sprinkler 68730 140460862547712 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:53:55,234 sprinkler 68730 140460862547712 pin: 12 already exists
-DEBUG 2016-08-20 00:53:55,234 sprinkler 68730 140460862547712 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:53:55,234 sprinkler 68730 140460862547712 beginning of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:53:55,234 sprinkler 68730 140460862547712 end of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:53:59,795 sprinkler 68742 140404900017920 beginning of __init__
-DEBUG 2016-08-20 00:53:59,795 sprinkler 68742 140404900017920 end of __init__
-DEBUG 2016-08-20 00:54:02,259 sprinkler 68742 140404888667904 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:54:02,262 sprinkler 68742 140404888667904 set pin 12
-DEBUG 2016-08-20 00:54:02,262 sprinkler 68742 140404888667904 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:54:02,263 sprinkler 68742 140404888667904 beginning of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:54:02,267 sprinkler 68742 140404888667904 end of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:54:03,205 sprinkler 68742 140404888667904 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:54:03,205 sprinkler 68742 140404888667904 pin: 12 already exists
-DEBUG 2016-08-20 00:54:03,205 sprinkler 68742 140404888667904 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:54:03,205 sprinkler 68742 140404888667904 beginning of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:54:03,205 sprinkler 68742 140404888667904 end of change_state for pin 12 state to HIGH
-DEBUG 2016-08-20 00:57:11,876 sprinkler 68820 140514173576960 beginning of __init__
-DEBUG 2016-08-20 00:57:11,876 sprinkler 68820 140514173576960 end of __init__
-DEBUG 2016-08-20 00:57:16,590 sprinkler 68820 140514162226944 beginning of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:57:16,590 sprinkler 68820 140514162226944 set pin 12
-DEBUG 2016-08-20 00:57:16,590 sprinkler 68820 140514162226944 end of init_GPIO, for pin: 12 and gpio_type: OUT
-DEBUG 2016-08-20 00:57:16,590 sprinkler 68820 140514162226944 beginning of change_state for pin 12 state to LOW
-DEBUG 2016-08-20 00:57:16,590 sprinkler 68820 140514162226944 end of change_state for pin 12 state to LOW
+DEBUG 2016-09-01 22:09:08,287 sprinkler 91740 139681005336320 beginning of __init__
+DEBUG 2016-09-01 22:09:08,290 sprinkler 91740 139681005336320 end of __init__
+DEBUG 2016-09-01 22:09:10,537 sprinkler 91745 140071896979200 beginning of __init__
+DEBUG 2016-09-01 22:09:10,538 sprinkler 91745 140071896979200 end of __init__
+DEBUG 2016-09-01 22:23:51,041 sprinkler 91993 140703810176768 beginning of __init__
+DEBUG 2016-09-01 22:23:51,042 sprinkler 91993 140703810176768 end of __init__
+DEBUG 2016-09-01 22:24:19,089 sprinkler 92006 140407444309760 beginning of __init__
+DEBUG 2016-09-01 22:24:19,089 sprinkler 92006 140407444309760 end of __init__
+DEBUG 2016-09-01 22:29:35,558 sprinkler 92172 139835357062912 beginning of __init__
+DEBUG 2016-09-01 22:29:35,559 sprinkler 92172 139835357062912 end of __init__
+DEBUG 2016-09-01 22:29:39,323 temperature 92172 139835232634624 beginning of get_readings
+ERROR 2016-09-01 22:29:39,323 temperature 92172 139835232634624 get_readings exception Single '}' encountered in format string
+DEBUG 2016-09-01 22:30:01,986 sprinkler 92194 139871179233024 beginning of __init__
+DEBUG 2016-09-01 22:30:01,986 sprinkler 92194 139871179233024 end of __init__
+DEBUG 2016-09-01 22:30:23,690 sprinkler 92205 139881183848192 beginning of __init__
+DEBUG 2016-09-01 22:30:23,691 sprinkler 92205 139881183848192 end of __init__
+DEBUG 2016-09-01 22:30:53,056 sprinkler 92220 140458374457088 beginning of __init__
+DEBUG 2016-09-01 22:30:53,057 sprinkler 92220 140458374457088 end of __init__
+DEBUG 2016-09-01 22:31:15,435 sprinkler 92235 140652675114752 beginning of __init__
+DEBUG 2016-09-01 22:31:15,447 sprinkler 92235 140652675114752 end of __init__
+DEBUG 2016-09-01 22:31:24,684 temperature 92235 140652595640064 beginning of get_readings
+ERROR 2016-09-01 22:31:24,684 temperature 92235 140652595640064 get_readings exception Single '}' encountered in format string
+DEBUG 2016-09-01 22:34:37,552 temperature 92235 140652595640064 beginning of get_readings
+ERROR 2016-09-01 22:34:37,552 temperature 92235 140652595640064 get_readings exception Single '}' encountered in format string
+DEBUG 2016-09-01 22:35:20,692 sprinkler 92339 140066873022208 beginning of __init__
+DEBUG 2016-09-01 22:35:20,692 sprinkler 92339 140066873022208 end of __init__
+DEBUG 2016-09-01 22:35:26,525 temperature 92339 140066861672192 beginning of get_readings
+ERROR 2016-09-01 22:35:26,525 temperature 92339 140066861672192 get_readings exception Single '}' encountered in format string
+DEBUG 2016-09-01 22:36:28,339 sprinkler 92376 140121976448768 beginning of __init__
+DEBUG 2016-09-01 22:36:28,341 sprinkler 92376 140121976448768 end of __init__
+DEBUG 2016-09-01 22:37:17,343 sprinkler 92398 139866652489472 beginning of __init__
+DEBUG 2016-09-01 22:37:17,343 sprinkler 92398 139866652489472 end of __init__
+DEBUG 2016-09-01 22:37:26,237 sprinkler 92403 139968299865856 beginning of __init__
+DEBUG 2016-09-01 22:37:26,238 sprinkler 92403 139968299865856 end of __init__
+DEBUG 2016-09-01 22:37:40,653 temperature 92403 139968192079616 beginning of get_readings
+ERROR 2016-09-01 22:37:40,654 temperature 92403 139968192079616 get_readings exception Single '}' encountered in format string
+DEBUG 2016-09-01 22:38:26,827 sprinkler 92443 140111193511680 beginning of __init__
+DEBUG 2016-09-01 22:38:26,827 sprinkler 92443 140111193511680 end of __init__
+DEBUG 2016-09-01 22:38:31,790 temperature 92443 140111171057408 beginning of get_readings
+ERROR 2016-09-01 22:38:31,790 temperature 92443 140111171057408 get_readings exception Single '}' encountered in format string
+DEBUG 2016-09-01 22:39:03,392 sprinkler 92465 139734006843136 beginning of __init__
+DEBUG 2016-09-01 22:39:03,392 sprinkler 92465 139734006843136 end of __init__
+DEBUG 2016-09-01 22:41:41,089 sprinkler 92507 140236549351168 beginning of __init__
+DEBUG 2016-09-01 22:41:41,090 sprinkler 92507 140236549351168 end of __init__
+DEBUG 2016-09-01 22:44:06,016 temperature 92507 140236453574400 beginning of get_readings
+ERROR 2016-09-01 22:44:06,016 temperature 92507 140236453574400 get_readings exception Single '}' encountered in format string
+DEBUG 2016-09-01 22:44:29,929 sprinkler 92557 139845074695936 beginning of __init__
+DEBUG 2016-09-01 22:44:29,929 sprinkler 92557 139845074695936 end of __init__
+DEBUG 2016-09-01 22:44:41,087 sprinkler 92565 139651003033344 beginning of __init__
+DEBUG 2016-09-01 22:44:41,088 sprinkler 92565 139651003033344 end of __init__
+DEBUG 2016-09-01 22:45:34,352 sprinkler 92587 140401443067648 beginning of __init__
+DEBUG 2016-09-01 22:45:34,353 sprinkler 92587 140401443067648 end of __init__
+DEBUG 2016-09-01 22:47:14,772 sprinkler 92652 139841839515392 beginning of __init__
+DEBUG 2016-09-01 22:47:14,773 sprinkler 92652 139841839515392 end of __init__
+DEBUG 2016-09-01 22:51:06,480 sprinkler 92717 140441823061760 beginning of __init__
+DEBUG 2016-09-01 22:51:06,481 sprinkler 92717 140441823061760 end of __init__
+DEBUG 2016-09-01 22:51:15,458 temperature 92717 140441714411264 beginning of get_readings
+ERROR 2016-09-01 22:51:15,458 temperature 92717 140441714411264 get_readings exception Single '}' encountered in format string
+DEBUG 2016-09-01 22:52:42,862 sprinkler 92766 139701183387392 beginning of __init__
+DEBUG 2016-09-01 22:52:42,876 sprinkler 92766 139701183387392 end of __init__
+DEBUG 2016-09-01 22:52:49,123 temperature 92766 139701135755008 beginning of get_readings
+DEBUG 2016-09-01 22:52:49,123 temperature 92766 139701135755008 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:53:00,901 sprinkler 92795 139624068241152 beginning of __init__
+DEBUG 2016-09-01 22:53:00,902 sprinkler 92795 139624068241152 end of __init__
+DEBUG 2016-09-01 22:53:56,981 sprinkler 92817 139696511493888 beginning of __init__
+DEBUG 2016-09-01 22:53:56,982 sprinkler 92817 139696511493888 end of __init__
+DEBUG 2016-09-01 22:54:11,254 temperature 92817 139696394974976 beginning of get_readings
+DEBUG 2016-09-01 22:54:11,254 temperature 92817 139696394974976 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:54:11,254 temperature 92817 139696394974976 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:56:31,683 temperature 92817 139696428545792 beginning of get_readings
+DEBUG 2016-09-01 22:56:31,683 temperature 92817 139696428545792 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:56:31,683 temperature 92817 139696428545792 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:56:33,723 temperature 92817 139696428545792 beginning of get_readings
+DEBUG 2016-09-01 22:56:33,723 temperature 92817 139696428545792 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:56:33,724 temperature 92817 139696428545792 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:56:35,174 temperature 92817 139696428545792 beginning of get_readings
+DEBUG 2016-09-01 22:56:35,174 temperature 92817 139696428545792 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:56:35,174 temperature 92817 139696428545792 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:56:35,889 temperature 92817 139696428545792 beginning of get_readings
+DEBUG 2016-09-01 22:56:35,889 temperature 92817 139696428545792 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:56:35,889 temperature 92817 139696428545792 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:56:36,167 temperature 92817 139696428545792 beginning of get_readings
+DEBUG 2016-09-01 22:56:36,167 temperature 92817 139696428545792 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:56:36,167 temperature 92817 139696428545792 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:56:36,411 temperature 92817 139696428545792 beginning of get_readings
+DEBUG 2016-09-01 22:56:36,411 temperature 92817 139696428545792 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:56:36,411 temperature 92817 139696428545792 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:57:17,078 temperature 92817 139696394974976 beginning of get_readings
+DEBUG 2016-09-01 22:57:17,078 temperature 92817 139696394974976 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:57:17,078 temperature 92817 139696394974976 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:58:22,088 temperature 92817 139696378189568 beginning of get_readings
+DEBUG 2016-09-01 22:58:22,088 temperature 92817 139696378189568 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:58:22,088 temperature 92817 139696378189568 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:59:45,276 temperature 92817 139696378189568 beginning of get_readings
+DEBUG 2016-09-01 22:59:45,276 temperature 92817 139696378189568 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:59:45,277 temperature 92817 139696378189568 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:59:50,083 temperature 92817 139696378189568 beginning of get_readings
+DEBUG 2016-09-01 22:59:50,083 temperature 92817 139696378189568 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 22:59:50,083 temperature 92817 139696378189568 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:00:01,505 sprinkler 92976 140250243426048 beginning of __init__
+DEBUG 2016-09-01 23:00:01,505 sprinkler 92976 140250243426048 end of __init__
+DEBUG 2016-09-01 23:00:11,780 temperature 92817 139696394974976 beginning of get_readings
+DEBUG 2016-09-01 23:00:11,781 temperature 92817 139696394974976 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:00:11,781 temperature 92817 139696394974976 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:00:46,072 temperature 92817 139696386582272 beginning of get_readings
+DEBUG 2016-09-01 23:00:46,072 temperature 92817 139696386582272 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:00:46,072 temperature 92817 139696386582272 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:01:35,933 sprinkler 93116 140085450594048 beginning of __init__
+DEBUG 2016-09-01 23:01:35,933 sprinkler 93116 140085450594048 end of __init__
+DEBUG 2016-09-01 23:01:39,195 temperature 93116 140085428139776 beginning of get_readings
+DEBUG 2016-09-01 23:01:39,195 temperature 93116 140085428139776 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:01:39,195 temperature 93116 140085428139776 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:01:54,328 temperature 93116 140085428139776 beginning of get_readings
+DEBUG 2016-09-01 23:01:54,328 temperature 93116 140085428139776 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:01:54,328 temperature 93116 140085428139776 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:01:58,462 temperature 93116 140085428139776 beginning of get_readings
+DEBUG 2016-09-01 23:01:58,462 temperature 93116 140085428139776 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:01:58,462 temperature 93116 140085428139776 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:03:34,941 temperature 93116 140085055977216 beginning of get_readings
+DEBUG 2016-09-01 23:03:34,941 temperature 93116 140085055977216 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:03:34,941 temperature 93116 140085055977216 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:03:52,391 temperature 93116 140085428139776 beginning of get_readings
+DEBUG 2016-09-01 23:03:52,391 temperature 93116 140085428139776 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:03:52,392 temperature 93116 140085428139776 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:05:30,234 temperature 93116 140085439244032 beginning of get_readings
+DEBUG 2016-09-01 23:05:30,234 temperature 93116 140085439244032 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:05:30,234 temperature 93116 140085439244032 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:06:03,048 temperature 93116 140085402699520 beginning of get_readings
+DEBUG 2016-09-01 23:06:03,048 temperature 93116 140085402699520 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:06:03,048 temperature 93116 140085402699520 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:07:54,389 temperature 93116 140085428139776 beginning of get_readings
+DEBUG 2016-09-01 23:07:54,390 temperature 93116 140085428139776 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:07:54,390 temperature 93116 140085428139776 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:08:07,461 temperature 93116 140085402699520 beginning of get_readings
+DEBUG 2016-09-01 23:08:07,461 temperature 93116 140085402699520 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:08:07,462 temperature 93116 140085402699520 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:08:33,904 temperature 93116 140085411092224 beginning of get_readings
+DEBUG 2016-09-01 23:08:33,904 temperature 93116 140085411092224 set temperature and humidity of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:08:33,905 temperature 93116 140085411092224 end of get_readings: 21.0 *C | 40.0 %
+DEBUG 2016-09-01 23:09:25,112 sprinkler 93406 140316992251648 beginning of __init__
+DEBUG 2016-09-01 23:09:25,112 sprinkler 93406 140316992251648 end of __init__
