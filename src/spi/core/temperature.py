@@ -1,8 +1,8 @@
-import Adafruit_DHT as dht_sensor
+import core.Adafruit_DHT as dht_sensor
 import logging
 
 logger = logging.getLogger(__name__)
-SENSORTYPE = 22 dht_sensor.DHT22
+SENSORTYPE = dht_sensor.DHT22
 GPIO_PIN = 17
 
 
