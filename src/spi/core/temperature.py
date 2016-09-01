@@ -1,4 +1,4 @@
-import core.Adafruit_DHT as dht_sensor
+import core.Adafruit_Python_DHT.Adafruit_DHT as dht_sensor
 import logging
 
 logger = logging.getLogger(__name__)
