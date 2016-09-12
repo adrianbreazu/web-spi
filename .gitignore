@@ -1,8 +1,14 @@
-#ignore pyc files
+# ignore pyc files
 *.pyc
 
-#ignore __pychache__ directory
+# ignore log files
+*.log
+
+# ignore __pychache__ directory
 __pycache__/
 
-##ignore .idea/ directory
-.idea/
+# ignore .idea/ directory
+src/spi/.idea/
+
+# ignore Adafruit directory
+src/spi/core/Adafruit_Python_DHT/

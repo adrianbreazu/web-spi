@@ -1,12 +1,10 @@
 import core.Adafruit_Python_DHT.Adafruit_DHT as dht_sensor
 import sqlite3 as sqlite
 import datetime as datetime
-import random as random
 
-SENSORTYPE = 22 #dht_sensor.DHT22
+SENSORTYPE = dht_sensor.DHT22
 GPIO_PIN = 17
 DB = '/var/www/web-spi/src/spi/db.sqlite3'
-#DB = '/home/adrianbreazu/repositories/web-spi/src/spi/db.sqlite3'
 
 def get_readings():
     try:
@@ -18,21 +16,23 @@ def get_readings():
         if (humidity is not None) & (temperature is not None):
             reads['temperature'] = round(temperature, 2)
             reads['humidity'] = round(humidity, 2)
+        else:
+            print("Exception humidity is None or temperature is None")
 
-        cursor.execute("INSERT INTO sprinkler_weather VALUES ( ?, ?, ?, ?)", (random.randint(1, 1000000000), humidity, temperature, str(datetime.datetime.now().strftime("%H:%M:%S"))))
+        cursor.execute("INSERT INTO sprinkler_weather VALUES ( NULL, ?, ?, ?)", (humidity, temperature, str(datetime.datetime.now().strftime("%H:%M:%S"))))
         connection.commit()
 
     except sqlite.Error as e:
         print("Error: {0]".format(e.args[0]))
 
     except Exception as e:
-        print ("exception: {0]".format(e))
+        print ("Exception: {0]".format(e))
         reads['temperature'] = 0
         reads['humidity'] = 0
 
     finally:
         connection.close()
-        print(555)
+        print("I am done")
         return reads
 
 
