@@ -250,3 +250,458 @@ INFO 2016-09-01 23:08:33,904 views 93116 140085411092224 RAW POST request : b'{"
 DEBUG 2016-09-01 23:08:33,904 views 93116 140085411092224 session id: 1
 DEBUG 2016-09-01 23:08:33,905 views 93116 140085411092224 views.temp created data JSON with content: {"humidity": "40", "temperature": "21", "sessionid": 1}
 DEBUG 2016-09-01 23:08:33,905 views 93116 140085411092224 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-02 17:18:52,285 views 94324 139985223091968 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-02 17:18:52,285 views 94324 139985223091968 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-02 17:18:52,289 views 94324 139985223091968 session id: 1
+DEBUG 2016-09-02 17:18:52,321 views 94324 139985223091968 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-02 17:22:49,732 views 94448 139717702055680 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-02 17:22:49,745 views 94448 139717702055680 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-02 17:22:49,805 views 94448 139717702055680 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-02 17:22:51,917 views 94448 139717702055680 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-02 17:22:51,917 views 94448 139717702055680 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-02 17:22:51,917 views 94448 139717702055680 session id: 1
+DEBUG 2016-09-02 17:22:51,918 views 94448 139717702055680 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-02 17:23:34,583 views 94474 140565184050944 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-02 17:23:34,605 views 94474 140565184050944 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-02 17:23:34,688 views 94474 140565184050944 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-02 17:23:36,341 views 94474 140565184050944 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-02 17:23:36,341 views 94474 140565184050944 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-02 17:23:36,341 views 94474 140565184050944 session id: 1
+DEBUG 2016-09-02 17:23:36,342 views 94474 140565184050944 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-02 17:24:11,961 views 94497 139803992758016 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-02 17:24:11,979 views 94497 139803992758016 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-02 17:24:12,022 views 94497 139803992758016 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-02 17:24:14,036 views 94497 139803956475648 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-02 17:24:14,037 views 94497 139803956475648 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-02 17:24:14,037 views 94497 139803956475648 session id: 1
+DEBUG 2016-09-02 17:24:14,038 views 94497 139803956475648 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-02 17:24:48,971 views 94523 140639668799232 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-02 17:24:48,972 views 94523 140639668799232 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-02 17:24:48,973 views 94523 140639668799232 session id: 1
+DEBUG 2016-09-02 17:24:48,974 views 94523 140639668799232 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-02 17:24:59,212 views 94530 140251905943296 beginning views.index with request: <WSGIRequest: POST '/sprinkler/'>
+INFO 2016-09-02 17:24:59,217 views 94530 140251905943296 views.index context: {'scheduler': <Scheduler: MySprinklerPi>, 'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>]}
+DEBUG 2016-09-02 17:24:59,268 views 94530 140251905943296 end views.index with request: <WSGIRequest: POST '/sprinkler/'>
+DEBUG 2016-09-02 17:25:01,621 views 94530 140251804718848 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-02 17:25:01,621 views 94530 140251804718848 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-02 17:25:01,622 views 94530 140251804718848 session id: 1
+DEBUG 2016-09-02 17:25:01,622 views 94530 140251804718848 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:17,032 views 98888 139704406107904 beginning views.index with request: <WSGIRequest: GET '/sprinkler/'>
+INFO 2016-09-03 00:38:17,038 views 98888 139704406107904 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-03 00:38:17,093 views 98888 139704406107904 end views.index with request: <WSGIRequest: GET '/sprinkler/'>
+DEBUG 2016-09-03 00:38:18,942 views 98888 139704406107904 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:18,942 views 98888 139704406107904 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:18,942 views 98888 139704406107904 session id: 1
+DEBUG 2016-09-03 00:38:18,942 views 98888 139704406107904 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:43,479 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:43,479 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:43,479 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:43,482 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:43,482 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:45,629 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:45,630 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:45,630 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:45,632 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:45,632 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:46,653 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:46,655 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:46,655 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:46,657 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:46,658 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:47,134 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:47,134 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:47,134 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:47,136 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:47,136 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:47,351 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:47,352 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:47,352 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:47,353 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:47,354 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:47,599 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:47,599 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:47,599 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:47,601 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:47,602 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:47,846 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:47,848 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:47,848 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:47,851 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:47,851 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:48,071 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:48,071 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:48,077 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:48,087 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:48,089 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:48,271 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:48,271 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:48,272 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:48,276 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:48,276 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:48,460 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:48,460 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:48,461 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:48,462 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:48,463 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:48,629 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:48,630 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:48,630 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:48,631 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:48,632 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:48,826 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:48,827 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:48,827 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:48,833 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:48,835 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:49,005 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:49,006 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:49,006 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:49,008 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:49,012 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:49,203 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:49,203 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:49,203 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:49,207 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:49,207 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:49,401 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:49,401 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:49,402 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:49,404 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:49,404 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:49,695 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:49,695 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:49,695 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:49,697 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:49,697 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:49,968 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:49,968 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:49,969 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:49,971 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:49,971 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:50,515 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:50,522 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:50,523 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:50,526 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:50,527 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:50,780 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:50,780 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:50,781 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:50,783 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:50,783 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:51,004 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:51,005 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:51,005 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:51,007 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:51,007 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:51,264 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:51,265 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:51,266 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:51,270 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:51,270 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:51,488 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:51,488 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:51,489 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:51,491 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:51,491 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:51,750 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:51,750 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:51,750 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:51,752 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:51,752 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:52,062 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:52,062 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:52,063 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:52,065 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:52,065 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:52,270 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:52,270 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:52,271 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:52,273 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:52,273 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:52,449 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:52,449 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:52,449 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:52,451 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:52,452 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:52,640 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:52,642 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:52,642 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:52,652 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:52,655 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:52,852 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:52,855 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:52,855 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:52,863 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:52,864 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:38:53,036 views 98918 140305158354688 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:38:53,037 views 98918 140305158354688 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:38:53,037 views 98918 140305158354688 session id: 1
+DEBUG 2016-09-03 00:38:53,047 views 98918 140305158354688 views.temp created data JSON with content: {"sessionid": 1, "humidity": 1.0, "temperature": 2.0}
+DEBUG 2016-09-03 00:38:53,047 views 98918 140305158354688 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:12,094 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:12,095 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:12,096 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:12,098 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:12,098 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:12,822 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:12,823 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:12,823 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:12,824 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:12,825 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:13,021 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:13,021 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:13,022 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:13,026 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:13,026 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:13,222 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:13,222 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:13,224 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:13,226 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:13,227 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:13,450 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:13,451 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:13,453 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:13,455 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:13,456 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:13,603 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:13,603 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:13,604 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:13,616 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:13,617 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:13,751 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:13,753 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:13,753 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:13,761 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:13,761 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:13,908 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:13,908 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:13,908 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:13,910 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:13,910 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:14,099 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:14,100 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:14,100 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:14,102 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:14,102 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:14,314 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:14,314 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:14,315 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:14,318 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:14,318 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:14,539 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:14,540 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:14,540 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:14,542 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:14,544 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:15,227 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:15,227 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:15,228 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:15,230 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:15,231 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:15,451 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:15,451 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:15,452 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:15,458 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:15,458 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:15,714 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:15,714 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:15,715 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:15,717 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:15,717 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:15,958 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:15,961 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:15,962 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:15,974 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:15,975 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:16,200 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:16,201 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:16,201 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:16,202 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:16,204 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:16,400 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:16,401 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:16,401 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:16,404 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:16,405 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:16,631 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:16,633 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:16,634 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:16,636 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:16,636 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:16,851 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:16,851 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:16,852 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:16,859 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:16,860 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-03 00:39:17,059 views 98918 140305138857728 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-03 00:39:17,060 views 98918 140305138857728 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-03 00:39:17,060 views 98918 140305138857728 session id: 1
+DEBUG 2016-09-03 00:39:17,072 views 98918 140305138857728 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-03 00:39:17,076 views 98918 140305138857728 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:58:29,324 views 105048 139643141936896 beginning views.index with request: <WSGIRequest: GET '/sprinkler/'>
+INFO 2016-09-12 21:58:29,331 views 105048 139643141936896 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-12 21:58:29,420 views 105048 139643141936896 end views.index with request: <WSGIRequest: GET '/sprinkler/'>
+DEBUG 2016-09-12 21:58:32,644 views 105048 139643106178816 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:58:32,644 views 105048 139643106178816 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:58:32,644 views 105048 139643106178816 session id: 1
+DEBUG 2016-09-12 21:58:32,649 views 105048 139643106178816 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-12 21:58:32,650 views 105048 139643106178816 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:58:32,700 views 105048 139643106178816 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:58:32,701 views 105048 139643106178816 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:58:32,701 views 105048 139643106178816 session id: 1
+DEBUG 2016-09-12 21:58:32,704 views 105048 139643106178816 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-12 21:58:32,704 views 105048 139643106178816 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:58:33,210 views 105048 139643106178816 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:58:33,211 views 105048 139643106178816 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:58:33,211 views 105048 139643106178816 session id: 1
+DEBUG 2016-09-12 21:58:33,213 views 105048 139643106178816 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-12 21:58:33,213 views 105048 139643106178816 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:58:33,809 views 105048 139643106178816 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:58:33,810 views 105048 139643106178816 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:58:33,810 views 105048 139643106178816 session id: 1
+DEBUG 2016-09-12 21:58:33,812 views 105048 139643106178816 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-12 21:58:33,812 views 105048 139643106178816 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:58:34,029 views 105048 139643106178816 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:58:34,032 views 105048 139643106178816 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:58:34,033 views 105048 139643106178816 session id: 1
+DEBUG 2016-09-12 21:58:34,035 views 105048 139643106178816 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-12 21:58:34,036 views 105048 139643106178816 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:58:34,197 views 105048 139643106178816 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:58:34,198 views 105048 139643106178816 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:58:34,198 views 105048 139643106178816 session id: 1
+DEBUG 2016-09-12 21:58:34,204 views 105048 139643106178816 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-12 21:58:34,205 views 105048 139643106178816 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:58:34,391 views 105048 139643106178816 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:58:34,391 views 105048 139643106178816 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:58:34,391 views 105048 139643106178816 session id: 1
+DEBUG 2016-09-12 21:58:34,394 views 105048 139643106178816 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-12 21:58:34,394 views 105048 139643106178816 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:58:34,558 views 105048 139643106178816 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:58:34,559 views 105048 139643106178816 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:58:34,559 views 105048 139643106178816 session id: 1
+DEBUG 2016-09-12 21:58:34,565 views 105048 139643106178816 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-12 21:58:34,565 views 105048 139643106178816 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:58:34,773 views 105048 139643106178816 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:58:34,773 views 105048 139643106178816 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:58:34,774 views 105048 139643106178816 session id: 1
+DEBUG 2016-09-12 21:58:34,776 views 105048 139643106178816 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-12 21:58:34,776 views 105048 139643106178816 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:58:35,025 views 105048 139643106178816 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:58:35,025 views 105048 139643106178816 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:58:35,032 views 105048 139643106178816 session id: 1
+DEBUG 2016-09-12 21:58:35,044 views 105048 139643106178816 views.temp created data JSON with content: {"sessionid": 1}
+DEBUG 2016-09-12 21:58:35,063 views 105048 139643106178816 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:59:10,288 views 105048 139643089393408 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:59:10,300 views 105048 139643089393408 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:59:10,301 views 105048 139643089393408 session id: 1
+DEBUG 2016-09-12 21:59:10,307 views 105048 139643089393408 views.temp created data JSON with content: {"temperature": 1.0, "sessionid": 1, "humidity": 1.0}
+DEBUG 2016-09-12 21:59:10,307 views 105048 139643089393408 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:59:11,292 views 105048 139643089393408 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:59:11,293 views 105048 139643089393408 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:59:11,293 views 105048 139643089393408 session id: 1
+DEBUG 2016-09-12 21:59:11,295 views 105048 139643089393408 views.temp created data JSON with content: {"temperature": 1.0, "sessionid": 1, "humidity": 1.0}
+DEBUG 2016-09-12 21:59:11,295 views 105048 139643089393408 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:59:12,033 views 105048 139643089393408 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:59:12,034 views 105048 139643089393408 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:59:12,034 views 105048 139643089393408 session id: 1
+DEBUG 2016-09-12 21:59:12,035 views 105048 139643089393408 views.temp created data JSON with content: {"temperature": 1.0, "sessionid": 1, "humidity": 1.0}
+DEBUG 2016-09-12 21:59:12,036 views 105048 139643089393408 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:59:12,239 views 105048 139643089393408 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:59:12,239 views 105048 139643089393408 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:59:12,239 views 105048 139643089393408 session id: 1
+DEBUG 2016-09-12 21:59:12,253 views 105048 139643089393408 views.temp created data JSON with content: {"temperature": 1.0, "sessionid": 1, "humidity": 1.0}
+DEBUG 2016-09-12 21:59:12,253 views 105048 139643089393408 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 21:59:12,440 views 105048 139643089393408 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 21:59:12,440 views 105048 139643089393408 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 21:59:12,441 views 105048 139643089393408 session id: 1
+DEBUG 2016-09-12 21:59:12,444 views 105048 139643089393408 views.temp created data JSON with content: {"temperature": 1.0, "sessionid": 1, "humidity": 1.0}
+DEBUG 2016-09-12 21:59:12,445 views 105048 139643089393408 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:01:29,217 views 105209 140575840114432 beginning views.index with request: <WSGIRequest: GET '/sprinkler/'>
+INFO 2016-09-12 22:01:29,222 views 105209 140575840114432 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-12 22:01:29,250 views 105209 140575840114432 end views.index with request: <WSGIRequest: GET '/sprinkler/'>
+DEBUG 2016-09-12 22:01:31,061 views 105209 140575722419968 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:01:31,062 views 105209 140575722419968 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:01:31,062 views 105209 140575722419968 session id: 1
+DEBUG 2016-09-12 22:01:31,063 views 105209 140575722419968 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:01:56,211 views 105246 139877921634048 beginning views.index with request: <WSGIRequest: GET '/sprinkler/'>
+INFO 2016-09-12 22:01:56,214 views 105246 139877921634048 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-12 22:01:56,260 views 105246 139877921634048 end views.index with request: <WSGIRequest: GET '/sprinkler/'>
+DEBUG 2016-09-12 22:01:58,093 views 105246 139877672802048 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:01:58,094 views 105246 139877672802048 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:01:58,094 views 105246 139877672802048 session id: 1
+DEBUG 2016-09-12 22:01:58,096 views 105246 139877672802048 views.temp created data JSON with content: {"sessionid": 1, "humidity": 2.0, "temperature": 2.0}
+DEBUG 2016-09-12 22:01:58,096 views 105246 139877672802048 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:01:59,348 views 105246 139877672802048 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:01:59,348 views 105246 139877672802048 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:01:59,349 views 105246 139877672802048 session id: 1
+DEBUG 2016-09-12 22:01:59,351 views 105246 139877672802048 views.temp created data JSON with content: {"sessionid": 1, "humidity": 2.0, "temperature": 2.0}
+DEBUG 2016-09-12 22:01:59,352 views 105246 139877672802048 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:02:00,092 views 105246 139877672802048 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:02:00,093 views 105246 139877672802048 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:02:00,093 views 105246 139877672802048 session id: 1
+DEBUG 2016-09-12 22:02:00,095 views 105246 139877672802048 views.temp created data JSON with content: {"sessionid": 1, "humidity": 2.0, "temperature": 2.0}
+DEBUG 2016-09-12 22:02:00,095 views 105246 139877672802048 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:02:00,671 views 105246 139877672802048 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:02:00,672 views 105246 139877672802048 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:02:00,672 views 105246 139877672802048 session id: 1
+DEBUG 2016-09-12 22:02:00,674 views 105246 139877672802048 views.temp created data JSON with content: {"sessionid": 1, "humidity": 2.0, "temperature": 2.0}
+DEBUG 2016-09-12 22:02:00,675 views 105246 139877672802048 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:02:00,869 views 105246 139877672802048 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:02:00,869 views 105246 139877672802048 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:02:00,869 views 105246 139877672802048 session id: 1
+DEBUG 2016-09-12 22:02:00,871 views 105246 139877672802048 views.temp created data JSON with content: {"sessionid": 1, "humidity": 2.0, "temperature": 2.0}
+DEBUG 2016-09-12 22:02:00,871 views 105246 139877672802048 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:02:01,046 views 105246 139877672802048 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:02:01,048 views 105246 139877672802048 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:02:01,049 views 105246 139877672802048 session id: 1
+DEBUG 2016-09-12 22:02:01,056 views 105246 139877672802048 views.temp created data JSON with content: {"sessionid": 1, "humidity": 2.0, "temperature": 2.0}
+DEBUG 2016-09-12 22:02:01,056 views 105246 139877672802048 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:02:01,215 views 105246 139877672802048 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:02:01,215 views 105246 139877672802048 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:02:01,216 views 105246 139877672802048 session id: 1
+DEBUG 2016-09-12 22:02:01,222 views 105246 139877672802048 views.temp created data JSON with content: {"sessionid": 1, "humidity": 2.0, "temperature": 2.0}
+DEBUG 2016-09-12 22:02:01,223 views 105246 139877672802048 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:02:01,396 views 105246 139877672802048 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:02:01,396 views 105246 139877672802048 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:02:01,397 views 105246 139877672802048 session id: 1
+DEBUG 2016-09-12 22:02:01,400 views 105246 139877672802048 views.temp created data JSON with content: {"sessionid": 1, "humidity": 2.0, "temperature": 2.0}
+DEBUG 2016-09-12 22:02:01,400 views 105246 139877672802048 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:02:01,547 views 105246 139877672802048 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:02:01,547 views 105246 139877672802048 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:02:01,548 views 105246 139877672802048 session id: 1
+DEBUG 2016-09-12 22:02:01,554 views 105246 139877672802048 views.temp created data JSON with content: {"sessionid": 1, "humidity": 2.0, "temperature": 2.0}
+DEBUG 2016-09-12 22:02:01,555 views 105246 139877672802048 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:02:01,722 views 105246 139877672802048 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:02:01,722 views 105246 139877672802048 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:02:01,723 views 105246 139877672802048 session id: 1
+DEBUG 2016-09-12 22:02:01,726 views 105246 139877672802048 views.temp created data JSON with content: {"sessionid": 1, "humidity": 2.0, "temperature": 2.0}
+DEBUG 2016-09-12 22:02:01,726 views 105246 139877672802048 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:02:01,869 views 105246 139877672802048 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:02:01,869 views 105246 139877672802048 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:02:01,870 views 105246 139877672802048 session id: 1
+DEBUG 2016-09-12 22:02:01,871 views 105246 139877672802048 views.temp created data JSON with content: {"sessionid": 1, "humidity": 2.0, "temperature": 2.0}
+DEBUG 2016-09-12 22:02:01,871 views 105246 139877672802048 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:03:00,721 views 105246 139877672802048 beginning views.index with request: <WSGIRequest: GET '/sprinkler/'>
+INFO 2016-09-12 22:03:00,729 views 105246 139877672802048 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-12 22:03:00,746 views 105246 139877672802048 end views.index with request: <WSGIRequest: GET '/sprinkler/'>
+DEBUG 2016-09-12 22:03:02,316 views 105246 139877672802048 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:03:02,317 views 105246 139877672802048 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:03:02,317 views 105246 139877672802048 session id: 1
+DEBUG 2016-09-12 22:03:02,319 views 105246 139877672802048 views.temp created data JSON with content: {"sessionid": 1, "humidity": 2.0, "temperature": 2.0}
+DEBUG 2016-09-12 22:03:02,319 views 105246 139877672802048 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:03:03,060 views 105246 139877672802048 beginning views.index with request: <WSGIRequest: GET '/sprinkler/'>
+INFO 2016-09-12 22:03:03,070 views 105246 139877672802048 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-12 22:03:03,106 views 105246 139877672802048 end views.index with request: <WSGIRequest: GET '/sprinkler/'>
+DEBUG 2016-09-12 22:03:04,442 views 105246 139877672802048 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:03:04,442 views 105246 139877672802048 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:03:04,443 views 105246 139877672802048 session id: 1
+DEBUG 2016-09-12 22:03:04,445 views 105246 139877672802048 views.temp created data JSON with content: {"sessionid": 1, "humidity": 2.0, "temperature": 2.0}
+DEBUG 2016-09-12 22:03:04,446 views 105246 139877672802048 end views.temp with request: {"sessionid":1}
+DEBUG 2016-09-12 22:03:05,112 views 105246 139877672802048 beginning views.index with request: <WSGIRequest: GET '/sprinkler/'>
+INFO 2016-09-12 22:03:05,118 views 105246 139877672802048 views.index context: {'sprinkler_list': [<Sprinkler: 1|Flowers_>, <Sprinkler: 2|Side2>, <Sprinkler: 3|Deck_sprinkler3>, <Sprinkler: 4|Front_Yard4>], 'scheduler': <Scheduler: MySprinklerPi>}
+DEBUG 2016-09-12 22:03:05,132 views 105246 139877672802048 end views.index with request: <WSGIRequest: GET '/sprinkler/'>
+DEBUG 2016-09-12 22:03:06,513 views 105246 139877910529792 beginning views.temp with request: {"sessionid":1}
+INFO 2016-09-12 22:03:06,514 views 105246 139877910529792 RAW POST request : b'{"sessionid":1}'
+DEBUG 2016-09-12 22:03:06,514 views 105246 139877910529792 session id: 1
+DEBUG 2016-09-12 22:03:06,516 views 105246 139877910529792 views.temp created data JSON with content: {"sessionid": 1, "humidity": 2.0, "temperature": 2.0}
+DEBUG 2016-09-12 22:03:06,517 views 105246 139877910529792 end views.temp with request: {"sessionid":1}

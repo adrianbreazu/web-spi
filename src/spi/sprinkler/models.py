@@ -23,3 +23,13 @@ class Sprinkler(models.Model):
 
     def __str__(self):
         return str(self.order) + "|" + self.name
+
+
+class Weather(models.Model):
+    humidity = models.FloatField()
+    temperature = models.FloatField()
+    timestamp = models.TimeField(auto_now_add=True)
+
+    def __str__(self):
+        return str(self.id) + '|' + str(self.timestamp)
+

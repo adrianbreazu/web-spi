@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
-from .models import Scheduler, Sprinkler
+from .models import Scheduler, Sprinkler, Weather
 from django.core.urlresolvers import reverse
 import sys, json, logging, datetime
 from core import sprinkler as sprinkler, temperature as temperature_core
@@ -123,9 +123,10 @@ def temp(request):
             session_id = int(data['sessionid'])
             logger.debug('session id: {0}'.format(session_id))
 
-            readings = temperature_core.get_readings()
-            data["temperature"] = readings.get('temperature')
-            data["humidity"] = readings.get('humidity')
+            weather = Weather.objects.order_by('timestamp')
+            for w in weather:
+                data["temperature"] = w.temperature
+                data["humidity"] = w.humidity
             logger.debug('views.temp created data JSON with content: {0}'.format(json.dumps(data)))
         else:
             logger.warning('a non POST request was made with request {0}'.format(request.body.decode('utf-8')))

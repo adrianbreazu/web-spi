@@ -1,4 +1,4 @@
-import Adafruit_DHT as dht_sensor
+import core.Adafruit_Python_DHT.Adafruit_DHT as dht_sensor
 import sqlite3 as sqlite
 import datetime as datetime
 import random as random
