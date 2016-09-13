@@ -1,9 +1,12 @@
-from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseRedirect
-from .models import Scheduler, Sprinkler, Weather
+import json
+import logging
+
 from django.core.urlresolvers import reverse
-import sys, json, logging, datetime
-from core import sprinkler as sprinkler, temperature as temperature_core
+from django.http import HttpResponse, HttpResponseRedirect
+from django.shortcuts import render
+
+from core import sprinkler as sprinkler
+from .models import Scheduler, Sprinkler, Weather
 
 my_sprinkler = sprinkler.Sprinkler()
 logger = logging.getLogger(__name__)
@@ -123,7 +126,7 @@ def temp(request):
             session_id = int(data['sessionid'])
             logger.debug('session id: {0}'.format(session_id))
 
-            weather = Weather.objects.order_by('timestamp')
+            weather = Weather.objects.order_by('-id')[:1]
             for w in weather:
                 data["temperature"] = w.temperature
                 data["humidity"] = w.humidity

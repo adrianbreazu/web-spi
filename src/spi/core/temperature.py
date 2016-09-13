@@ -1,4 +1,5 @@
 import core.Adafruit_Python_DHT.Adafruit_DHT as dht_sensor
+#import Adafruit_DHT as dht_sensor
 import sqlite3 as sqlite
 import datetime as datetime
 
