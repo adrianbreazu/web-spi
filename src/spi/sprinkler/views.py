@@ -4,6 +4,7 @@ import logging
 from django.core.urlresolvers import reverse
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
 
 from core import sprinkler as sprinkler
 from .models import Scheduler, Sprinkler, Weather
@@ -146,3 +147,37 @@ def temp(request):
                       context={"message": message})
     finally:
         logger.debug('end views.temp with request: {0}'.format(request.body.decode('utf-8')))
+
+@csrf_exempt
+def get_temp(request):
+    logger.debug('beginning views.get_temp with request: {0}'.format(request.body.decode('utf-8')))
+
+    try:
+        if request.method == 'POST':
+            logger.info('RAW POST request : {0}'.format(request.body))
+            data = json.loads(request.body.decode('utf-8'))
+            security_id = int(data['security-id'])
+            logger.debug('session id: {0}'.format(security_id))
+            if security_id == 1234567:
+                weather = Weather.objects.order_by('-id')[:1]
+                for w in weather:
+                    data["temperature"] = w.temperature
+                    data["humidity"] = w.humidity
+                logger.debug('views.get_temp created data JSON with content: {0}'.format(json.dumps(data)))
+            else:
+                logger.debug('views.get_temp with wrong security_id: {0}'.format(security_id))
+        else:
+            logger.warning('a non POST request was made with request {0}'.format(request.body.decode('utf-8')))
+            return render(request=request,
+                          template_name='sprinkler/error.html',
+                          context={"message": "Service unavailable"})
+
+        return HttpResponse(json.dumps(data),
+                            content_type="application/json")
+    except Exception as e:
+        message = "Something went wrong: " + e
+        return render(request=request,
+                      template_name='sprinkler/error.html',
+                      context={"message": message})
+    finally:
+        logger.debug('end views.get_temp with request: {0}'.format(request.body.decode('utf-8')))
