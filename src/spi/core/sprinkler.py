@@ -50,10 +50,10 @@ class Sprinkler:
             logger.debug("end get_gpio_input_value for pin {0}".format(pinout))
 
     def activate(self, pinout):
-        self.change_state(int(pinout), self.GPIO_STATE.get("low"))
+        self.change_state(int(pinout), self.GPIO_STATE.get("high"))
 
     def deactivate(self, pinout):
-        self.change_state(int(pinout), self.GPIO_STATE.get("high"))
+        self.change_state(int(pinout), self.GPIO_STATE.get("low"))
 
     def change_state(self, pinout, gpio_state):
         logger.debug("beginning of change_state for pin {0} state to {1}".format(pinout, gpio_state))

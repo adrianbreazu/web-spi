@@ -14,6 +14,7 @@ logger = logging.getLogger(__name__)
 
 RELAY_PIN = 4
 
+
 def __del__():
     my_sprinkler.__del__()
 
@@ -25,8 +26,8 @@ def index(request):
         sprinkler_list = Sprinkler.objects.order_by('order')
 
         # get RELAY_GPIO state
-        my_sprinkler.init_GPIO(4, my_sprinkler.GPIO_TYPE["output"])
-        light_status = str(my_sprinkler.get_gpio_input_value(4))
+        my_sprinkler.init_GPIO(RELAY_PIN, my_sprinkler.GPIO_TYPE["output"])
+        light_status = str(my_sprinkler.get_gpio_input_value(RELAY_PIN))
         logger.info('value of GPIO is {0}'.format(light_status))
 
         context = {
@@ -41,9 +42,9 @@ def index(request):
     except Exception as e:
         logger.error("views.index exception: {0}".format(e))
         return render(request=request,
-                     template_name='sprinkler/error.html',
-                     context={"message": "This is not the page you are looking for"},
-                     content_type="application/json")
+                      template_name='sprinkler/error.html',
+                      context={"message": "This is not the page you are looking for"},
+                      content_type="application/json")
     finally:
         logger.debug('end views.index with request: {0}'.format(request))
 
@@ -126,6 +127,7 @@ def error(request):
                   template_name='sprinkler/error.html',
                   context={"message": "something went wrong"})
 
+
 def temp(request):
     logger.debug('beginning views.temp with request: {0}'.format(request.body.decode('utf-8')))
 
@@ -156,6 +158,7 @@ def temp(request):
                       context={"message": message})
     finally:
         logger.debug('end views.temp with request: {0}'.format(request.body.decode('utf-8')))
+
 
 @csrf_exempt
 def get_temp(request):
@@ -190,6 +193,7 @@ def get_temp(request):
                       context={"message": message})
     finally:
         logger.debug('end views.get_temp with request: {0}'.format(request.body.decode('utf-8')))
+
 
 def lights(request):
     logger.debug('beginning views.lights with request: {0}'.format(request.body.decode('utf-8')))
