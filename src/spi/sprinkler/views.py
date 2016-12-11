@@ -197,6 +197,17 @@ def lights(request):
     logger.info("raw lights request {0}".format(request.body))
     try: 
         if request.method == 'POST':
+            data = json.loads(request.body.decode('utf-8'))
+
+            light_status = bool(data['light']['status'])
+            my_sprinkler.init_GPIO(RELAY_PIN, my_sprinkler.GPIO_TYPE["output"])
+            if light_status:
+                logger.info('start lights')
+                my_sprinkler.activate(RELAY_PIN)
+            else:
+                logger.info('stop lights')
+                my_sprinkler.deactivate(RELAY_PIN)
+            
             return HttpResponse(json.dumps("{'done':'ok'}"),
                                 content_type="application/json")
         else:
