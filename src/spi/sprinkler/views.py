@@ -12,6 +12,8 @@ from .models import Scheduler, Sprinkler, Weather
 my_sprinkler = sprinkler.Sprinkler()
 logger = logging.getLogger(__name__)
 
+RELAY_PIN = 4
+
 def __del__():
     my_sprinkler.__del__()
 
@@ -21,9 +23,16 @@ def index(request):
     try:
         scheduler = Scheduler.objects.get(pk=1)
         sprinkler_list = Sprinkler.objects.order_by('order')
+
+        # get RELAY_GPIO state
+        my_sprinkler.init_GPIO(4, my_sprinkler.GPIO_TYPE["output"])
+        light_status = str(my_sprinkler.get_gpio_input_value(4))
+        logger.info('value of GPIO is {0}'.format(light_status))
+
         context = {
             "scheduler": scheduler,
             "sprinkler_list": sprinkler_list,
+            "lights_status": light_status
         }
         logger.info('views.index context: {0}'.format(context))
         return render(request=request,
@@ -181,3 +190,23 @@ def get_temp(request):
                       context={"message": message})
     finally:
         logger.debug('end views.get_temp with request: {0}'.format(request.body.decode('utf-8')))
+
+def lights(request):
+    logger.debug('beginning views.lights with request: {0}'.format(request.body.decode('utf-8')))
+    
+    logger.info("raw lights request {0}".format(request.body))
+    try: 
+        if request.method == 'POST':
+            return HttpResponse(json.dumps("{'done':'ok'}"),
+                                content_type="application/json")
+        else:
+            logger.warning('a non POST request was made with request {0}'.format(request.body.decode('utf-8')))
+    
+    except Exception as e:
+        message = "Something went wrong: " + e
+        return render(request=request,
+                      template_name='sprinkler/error.html',
+                      context={"message": message})
+    
+    finally:
+        logger.debug('end views.lights with request: {0}'.format(request.body.decode('utf-8')))

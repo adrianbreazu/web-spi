@@ -1,5 +1,5 @@
 // AJAX logic for manual release of sprinkler
-$(function(){
+$(function() {
     function getCookie(name) {
         var cookieValue = null;
         if (document.cookie && document.cookie != '') {
@@ -16,6 +16,7 @@ $(function(){
         return cookieValue;
     }
     var csrftoken = getCookie('csrftoken');
+
     function csrfSafeMethod(method) {
         // these HTTP methods do not require CSRF protection
         return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
@@ -29,7 +30,7 @@ $(function(){
         }
     });
 
-    $('[id$="_button"]').change(function () {
+    $('[id$="_button"]').change(function() {
         var dataObject = new Object();
         var sprinklerObject = new Object();
         sprinklerObject.id = $(this).attr('sprinkler_id');
@@ -49,18 +50,41 @@ $(function(){
         });
 
         request.fail(function(error) {
-            window.alert('failed: '+ JSON.stringify(error));
+            window.alert('failed: ' + JSON.stringify(error));
         });
     });
 
-    $('#submit').click(function () {
+    $('#ctrl_lights').change(function() {
+        var dataObject = new Object();
+        var lightObject = new Object();
+        lightObject.status = $(this).prop('checked');
+        dataObject.light = lightObject;
+
+        request = $.ajax({
+            url: "lights",
+            method: "POST",
+            data: JSON.stringify(dataObject),
+            datatype: "json"
+        });
+
+        request.done(function(response) {
+            //window.alert('done: status: '+ response.sprinkler.status + ' and id: ' + response.sprinkler.id);
+            console.log('done: ' + JSON.stringify(response));
+        });
+
+        request.fail(function(error) {
+            window.alert('failed: ' + JSON.stringify(error));
+        });
+    });
+
+    $('#submit').click(function() {
         console.log("submit pressed");
 
         var submit_dataObject = new Object();
         var submit_sprinklerObject = new Object();
         var sprinklers = [];
 
-        submit_dataObject.name =  $("#scheduler_name").val();
+        submit_dataObject.name = $("#scheduler_name").val();
         submit_dataObject.start_time = $("#scheduler_start_time").val();
         submit_dataObject.skip = $("#scheduler_skip").val();
         submit_dataObject.days = $("#scheduler_days").val();
@@ -85,6 +109,6 @@ $(function(){
 });
 
 // form post request
-$(function () {
+$(function() {
 
 });

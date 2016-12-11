@@ -1,109 +1,121 @@
-{% extends "base.html" %}
-{% load staticfiles %}
-
-{% block title %}Sprinkler release home page{% endblock title %}
-
-{% block style %}
-<link href="{% static 'bootstrap-toggle/css/bootstrap-toggle.min.css' %}" rel="stylesheet"/>
-{% endblock style %}
-
-{% block content %}
-    <div class="container-fluid">
-        <div class="row">
-            <h1 class="text-center">Outside Temperature and humidity</h1>
-            <div class="panel panel-default">
-                <input id="temperature" placeholder="Temperature" disabled="disabled" />
-                <input id="humidity" placeholder="Humidity" disabled="disabled"/>
-                <input id="get-temperature-and-humidity" type="button" class="button" value="Get read"/>
-            </div>
-        </div>
-
-        <div class="row">
-            <h1 class="text-center">Sprinkler release system</h1>
-        </div>
-
-        <div class="row">
-            <form action="#" method="post">
-                <div class="form-group well">
-                    <input hidden="hidden" name="scheduler_days" id="scheduler_days" value="{{ scheduler.days }}" placeholder="Scheduled days"/>
-                    <label for="schedule_table">Scheduled days:</label>
-                    <table class="table table-bordered" id="schedule_table">
-                        <thead>
-                            <tr>
-                                <th class="text-center">All</th>
-                                <th class="text-center">Monday</th>
-                                <th class="text-center">Tuesday</th>
-                                <th class="text-center">Wednesday</th>
-                                <th class="text-center">Thursday</th>
-                                <th class="text-center">Friday</th>
-                                <th class="text-center">Saturday</th>
-                                <th class="text-center">Sunday</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-center"><input type="checkbox" id="checkbox_all"></td>
-                                <td class="text-center"><input type="checkbox" id="checkbox_Monday"></td>
-                                <td class="text-center"><input type="checkbox" id="checkbox_Tuesday"></td>
-                                <td class="text-center"><input type="checkbox" id="checkbox_Wednesday"></td>
-                                <td class="text-center"><input type="checkbox" id="checkbox_Thursday"></td>
-                                <td class="text-center"><input type="checkbox" id="checkbox_Friday"></td>
-                                <td class="text-center"><input type="checkbox" id="checkbox_Saturday"></td>
-                                <td class="text-center"><input type="checkbox" id="checkbox_Sunday"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <label for="scheduler_name">Scheduler name:</label>
-                    <input type="text" class="form-control" id="scheduler_name" name="scheduler_name" value="{{ scheduler.name }}" placeholder="Scheduler name" />
-
-                    <label for="scheduler_start_time">Scheduled start time:</label>
-                    <input type="time" class="form-control" id="scheduler_start_time" name="scheduler_start_time" placeholder="Scheduled start time" />
-
-                    <label for="scheduler_skip">Skip days:</label>
-                    <input type="number" class="form-control" id="scheduler_skip" name="scheduler_kip" value="{{ scheduler.skip_days }}" placeholder="Skip days" />
-                </div>
-
-                <div class="panel-group" id="panel_group">
-                {% for sprinkler in sprinkler_list %}
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" href="#sprinkler_main_div_{{ sprinkler.id }}"><i class="fa fa-expand" aria-hidden="true"></i></a>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="panel-collapse collapse orm-group well" id="sprinkler_main_div_{{ sprinkler.id }}">
-                        <label for="sprinkler_{{ sprinkler.id }}_id">Id:</label>
-                        <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_id" name="sprinkler_id" value="{{ sprinkler.id }}" placeholder="ID" />
-
-                        <label for="sprinkler_{{ sprinkler.id }}_name">Name:</label>
-                        <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_name" name="sprinkler_name" value="{{ sprinkler.name }}" placeholder="Name" />
-
-                        <label for="sprinkler_{{ sprinkler.id }}_duration">Duration:</label>
-                        <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_duration" name="sprinkler_duration" value="{{ sprinkler.duration }}" placeholder="Duration" />
-                        <br/>
-                        <label for="sprinkler_{{ sprinkler.id }}_button">Manual start/stop</label>
-                        <input type="checkbox" sprinkler_id="{{ sprinkler.id }}" id="sprinkler_{{ sprinkler.id }}_button" data-toggle="toggle" data-on="Start" data-off="Stop" />
-                        <br/>
-                        <label for="sprinkler_{{ sprinkler.id }}_notes">Notes:</label>
-                        <textarea class="form-control" id="sprinkler_{{ sprinkler.id }}_notes" rows="3" name="sprinkler_notes" placeholder="Notes">{{ sprinkler.notes }}</textarea>
-                    </div>
-                {% endfor %}
-                </div>
-                {% csrf_token %}
-                <input id="submit" type="submit" class="form-control btn btn-primary" value="SAVE" />
-            </form>
+{% extends "base.html" %} {% load staticfiles %} {% block title %}Sprinkler release home page{% endblock title %} {% block style %}
+<link href="{% static 'bootstrap-toggle/css/bootstrap-toggle.min.css' %}" rel="stylesheet" /> {% endblock style %} {% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <h1 class="text-center">Outside Temperature and humidity</h1>
+        <div class="panel panel-default">
+            <input id="temperature" placeholder="Temperature" disabled="disabled" />
+            <input id="humidity" placeholder="Humidity" disabled="disabled" />
+            <input id="get-temperature-and-humidity" type="button" class="button" value="Get read" />
         </div>
     </div>
-{% endblock content %}
 
-{% block script %}
+    <div class="row">
+        <h1 class="text-center">Start/Stop Christmas lights</h1>
+        <div class="panel panel-default">
+            <label for="ctrl_lights">Manual start/stop Chirstmas lights </label>
+            <input type="checkbox" id="ctrl_lights" data-toggle="toggle" data-on="Start" data-off="Stop" />
+        </div>
+    </div>
+
+    <div class="row">
+        <h1 class="text-center">Sprinkler release system</h1>
+
+    </div>
+
+    <div class="row">
+        <form action="#" method="post">
+            <div class="form-group well">
+                <input hidden="hidden" name="scheduler_days" id="scheduler_days" value="{{ scheduler.days }}" placeholder="Scheduled days" />
+                <label for="schedule_table">Scheduled days:</label>
+                <table class="table table-bordered" id="schedule_table">
+                    <thead>
+                        <tr>
+                            <th class="text-center">All</th>
+                            <th class="text-center">Monday</th>
+                            <th class="text-center">Tuesday</th>
+                            <th class="text-center">Wednesday</th>
+                            <th class="text-center">Thursday</th>
+                            <th class="text-center">Friday</th>
+                            <th class="text-center">Saturday</th>
+                            <th class="text-center">Sunday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-center"><input type="checkbox" id="checkbox_all"></td>
+                            <td class="text-center"><input type="checkbox" id="checkbox_Monday"></td>
+                            <td class="text-center"><input type="checkbox" id="checkbox_Tuesday"></td>
+                            <td class="text-center"><input type="checkbox" id="checkbox_Wednesday"></td>
+                            <td class="text-center"><input type="checkbox" id="checkbox_Thursday"></td>
+                            <td class="text-center"><input type="checkbox" id="checkbox_Friday"></td>
+                            <td class="text-center"><input type="checkbox" id="checkbox_Saturday"></td>
+                            <td class="text-center"><input type="checkbox" id="checkbox_Sunday"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <label for="scheduler_name">Scheduler name:</label>
+                <input type="text" class="form-control" id="scheduler_name" name="scheduler_name" value="{{ scheduler.name }}" placeholder="Scheduler name" />
+
+                <label for="scheduler_start_time">Scheduled start time:</label>
+                <input type="time" class="form-control" id="scheduler_start_time" name="scheduler_start_time" placeholder="Scheduled start time" />
+
+                <label for="scheduler_skip">Skip days:</label>
+                <input type="number" class="form-control" id="scheduler_skip" name="scheduler_kip" value="{{ scheduler.skip_days }}" placeholder="Skip days" />
+            </div>
+
+            <div class="panel-group" id="panel_group">
+                {% for sprinkler in sprinkler_list %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#sprinkler_main_div_{{ sprinkler.id }}"><i class="fa fa-expand" aria-hidden="true"></i></a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel-collapse collapse orm-group well" id="sprinkler_main_div_{{ sprinkler.id }}">
+                    <label for="sprinkler_{{ sprinkler.id }}_id">Id:</label>
+                    <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_id" name="sprinkler_id" value="{{ sprinkler.id }}" placeholder="ID" />
+
+                    <label for="sprinkler_{{ sprinkler.id }}_name">Name:</label>
+                    <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_name" name="sprinkler_name" value="{{ sprinkler.name }}" placeholder="Name" />
+
+                    <label for="sprinkler_{{ sprinkler.id }}_duration">Duration:</label>
+                    <input type="text" class="form-control" id="sprinkler_{{ sprinkler.id }}_duration" name="sprinkler_duration" value="{{ sprinkler.duration }}" placeholder="Duration" />
+                    <br/>
+                    <label for="sprinkler_{{ sprinkler.id }}_button">Manual start/stop</label>
+                    <input type="checkbox" sprinkler_id="{{ sprinkler.id }}" id="sprinkler_{{ sprinkler.id }}_button" data-toggle="toggle" data-on="Start" data-off="Stop" />
+                    <br/>
+                    <label for="sprinkler_{{ sprinkler.id }}_notes">Notes:</label>
+                    <textarea class="form-control" id="sprinkler_{{ sprinkler.id }}_notes" rows="3" name="sprinkler_notes" placeholder="Notes">{{ sprinkler.notes }}</textarea>
+                </div>
+                {% endfor %}
+            </div>
+            {% csrf_token %}
+            <input id="submit" type="submit" class="form-control btn btn-primary" value="SAVE" />
+        </form>
+    </div>
+</div>
+{% endblock content %} {% block script %}
 <script src="{% static 'sprinkler/js/time.js' %}"></script>
 <script>
-// format start time data
-time = Time("{{ scheduler.start_time }}");
-$("#scheduler_start_time").val(time.format("hh:mm"));
+    // format start time data
+    time = Time("{{ scheduler.start_time }}");
+    $("#scheduler_start_time").val(time.format("hh:mm"));
+    
+    console.log(000);
+    console.log("111" + {{ lights_status }});
+    var lights_status;
+    lights_status = parseInt({{ light_status }});
+    if (light_status) {
+        console.log('checked - true');
+        $('#ctrl_lights').prop( "checked", true);
+    }
+    else {
+        console.log('checked - false')
+        $('#ctrl_lights').prop( "checked", false);
+    }
 </script>
 <script src="{% static 'sprinkler/js/days.js' %}"></script>
 <script src="{% static 'sprinkler/js/sprinkler_release.js' %}"></script>

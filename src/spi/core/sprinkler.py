@@ -19,7 +19,7 @@ class Sprinkler:
     def __init__(self):
         logger.debug("beginning of __init__")
         try:
-            GPIO.setmode(GPIO.BOARD)
+            GPIO.setmode(GPIO.BCM)
             self.pinout_list = []
         except Exception as e:
             logger.error("__init__ exception {0}".format(e))
@@ -39,6 +39,15 @@ class Sprinkler:
             logger.error("init_GPIO exception {0}".format(e))
         finally:
             logger.debug("end of init_GPIO, for pin: {0} and gpio_type: {1}".format(pinout, gpio_type))
+
+    def get_gpio_input_value(self, pinout):
+        logger.debug("beginning of get_gpio_input_value, for pin: {0}".format(pinout))
+        try:
+            return GPIO.input(pinout)
+        except Exception as e:
+            logger.error("get_gpio_input_value exception {0}".format(e))
+        finally:
+            logger.debug("end get_gpio_input_value for pin {0}".format(pinout))
 
     def activate(self, pinout):
         self.change_state(int(pinout), self.GPIO_STATE.get("low"))
