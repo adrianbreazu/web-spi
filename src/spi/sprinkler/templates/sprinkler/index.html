@@ -104,8 +104,6 @@
     time = Time("{{ scheduler.start_time }}");
     $("#scheduler_start_time").val(time.format("hh:mm"));
     
-    console.log(000);
-    console.log("111" + {{ lights_status }});
     var lights_status;
     lights_status = parseInt({{ lights_status }});
     if (light_status) {

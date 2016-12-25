@@ -1,5 +1,7 @@
 # ignore pyc files
 *.pyc
+.idea
+.vscode
 
 # ignore log files
 *.log

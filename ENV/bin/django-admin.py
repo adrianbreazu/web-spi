@@ -1,4 +1,4 @@
-#!/home/adrianbreazu/repositories/web-spi/ENV/bin/python3
+#!/home/adrian/repositories/BITBUCKET/web-spi/ENV/bin/python
 from django.core import management
 
 if __name__ == "__main__":

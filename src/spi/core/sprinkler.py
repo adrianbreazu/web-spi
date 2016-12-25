@@ -1,5 +1,5 @@
-#import RPi.GPIO as GPIO
-import core.GPIO as GPIO
+import RPi.GPIO as GPIO
+#import core.GPIO as GPIO
 import logging
 
 logger = logging.getLogger(__name__)
