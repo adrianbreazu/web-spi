@@ -3,7 +3,7 @@
 This is a simple automation projects(using Raspbery Pi) created for internal usage. With it I am able to control my sprinklers (manually and using a crontab job).
 Later I added to functioanlity to display the temperature and humidity from a DHT22 sensor as well as the ability to control a relay linked to my house external lights.
 
-(!) Not all the features are fully finished (temperature/humidity and Christmas lights Raspbery Pi GPIOs were hardcoded) as I used this project as an experiment. A more complex version of it will be release under the GitHub project [GitHub](https://github.com/adrianbreazu/titanium-torpedo)
+(!) Not all the features are fully finished (temperature/humidity and Christmas lights Raspbery Pi GPIOs were hardcoded) as I used this project as an experiment. A more complex version of it will be release under the GitHub project [titanium-torpedo](https://github.com/adrianbreazu/titanium-torpedo)
 
 
 # Hardware needed
@@ -31,7 +31,7 @@ All the script paths are hardcoded to _/var/www_ and _/home/adrianbreazu/reposit
 7. you can also configure the system to send you email when a job is finished, for this please update ../core/send_email.py
 8. start the application and add the correct GPIO's pin # for the sprinkler relays, also correct the /core/temperature.py GPIO for the temperature pin # and the /sprinkler/view.pt (sorry for that, I plan of correcting this :) ) for the Christmas lights relay pin #
 9. if you have more than 4 sprinklers just add new record in the sprinklers table with the correct GPIO pin # and refresh the ..url..:portnumber/sprinkler/ web page also you need to correct the crontab for scheduled job
-
+10. also please install the modules as described in requirements.txt using the virtualenv command
 
 for the db use:
 username: admin
